@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stationsummary</title>
+</head>
+<body>
+<section>
+
+    <div class="ui five stackable cards">
+        <div class="primary card">
+            <div class="image">
+                <img src="https://cdn.glitch.com/74dec8ba-4ed2-4ce5-a2c6-7dc366c298b8%2Fpexels-pixabay-269790.jpg?v=1627571491001">
+            </div>
+            <div class = "center aligned icon">
+                <i class="huge blue map marker icon"></i>
+            </div>
+            <div class="content">
+                <a class="header">{{stationname}}</a>
+                <div class="description">
+                    <p> Latitude {{station.latitude}} </p>
+                    <p> Longitude {{station.longitude}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="primary card">
+            <div class="image">
+                <img src="https://cdn.glitch.com/74dec8ba-4ed2-4ce5-a2c6-7dc366c298b8%2Fpexels-megan-newman-837494.jpg?v=1627571519790">
+            </div>
+            <div class = "center aligned icon">
+                #{if {{getWeatherCode}} == "clear" }
+                <i class="huge pink sun icon"></i>
+                #{/if}
+                #{if _station.latestWeatherCodeStr == "rain" }
+                <i class="huge pink umbrella icon"></i>
+                #{/if}
+                #{if _station.latestWeatherCodeStr == "partial clouds" }
+                <i class="huge pink cloud sun icon"></i>
+                #{/if}
+                #{if _station.latestWeatherCodeStr == "cloudy" }
+                <i class="huge pink cloud icon"></i>
+                #{/if}
+                #{if _station.latestWeatherCodeStr == "light showers" }
+                <i class="huge pink cloud rain icon"></i>
+                #{/if}
+                #{if _station.latestWeatherCodeStr == "heavy showers" }
+                <i class="huge pink cloud showers heavy icon"></i>
+                #{/if}
+                #{if _station.latestWeatherCodeStr == "snow" }
+                <i class="huge pink snowflake icon"></i>
+                #{/if}
+                #{if _station.latestWeatherCodeStr == "thunder" }
+                <i class="huge pink bolt icon"></i>
+                #{/if}
+                #{if _station.latestWeatherCodeStr == "Invalid code" }
+                <i class="massive red exclamation circle icon"></i>
+                #{/if}
+            </div>
+            <div class="content">
+                <a class="header">Weather</a>
+                <div class="description">
+                    <p> latest Weather: ${_station.latestWeatherCodeStr}  </p>
+                </div>
+            </div>
+        </div>
+        <div class="primary card">
+            <div class="image">
+                <img src="https://cdn.glitch.com/74dec8ba-4ed2-4ce5-a2c6-7dc366c298b8%2Fpexels-eberhard-grossgasteiger-844297.jpg?v=1627571489529">
+            </div>
+            <div class = "center aligned icon">
+                <i class="huge blue thermometer icon"></i>
+            </div>
+            <div class="content">
+                <a class="header">Temperature</a>
+                <div class="description">
+                    <p>latest temp: {{latestReading.temp}}  C</p>
+                    <p>Minimum temp: {{minTemp}} C</p>
+                    <p>Maximum temp: {{maxTemp}} C</p>
+                </div>
+                <div class = "center aligned icon">
+                    <div>
+                        #{if _station.tempTrend == "rising" }
+                        <i class="big blue arrow alternate circle up icon"></i>
+                        #{/if}
+                        #{if _station.tempTrend == "steady" }
+                        <i class="big blue arrows alternate horizontal icon"></i>
+                        #{/if}
+                        #{if _station.tempTrend == "falling" }
+                        <i class="big blue arrow alternate circle down icon"></i>
+                        #{/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="primary card">
+            <div class="image">
+                <img src="https://cdn.glitch.com/74dec8ba-4ed2-4ce5-a2c6-7dc366c298b8%2Fwind.jpg?v=1627571496828">
+            </div>
+            <div class = "center aligned icon">
+                <i class="huge blue wind icon"></i>
+            </div>
+            <div class="content">
+                <a class="header">Wind Speed</a>
+                <div class="description">
+                    <p> latest WindSpeed ${_station.beaufort}</p>
+                    <p>${_station.convertToTextDir}</p>
+                    <p>Feels Like</p>
+                    <p>${_station.latestWindChill} C</p>
+                    <p>Min Wind Speed: ${_station.minWindReading} bft</p>
+                    <p>Max Wind Speed: ${_station.maxWindReading} bft</p>
+                </div>
+                <div class = "center aligned icon">
+                    <div>
+                        #{if _station.windTrend == "rising" }
+                        <i class="big blue arrow alternate circle up icon"></i>
+                        #{/if}
+                        #{if _station.windTrend == "steady" }
+                        <i class="big blue arrows alternate horizontal icon"></i>
+                        #{/if}
+                        #{if _station.windTrend == "falling" }
+                        <i class="big blue arrow alternate circle down icon"></i>
+                        #{/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="primary card">
+            <div class="image">
+                <img src="https://cdn.glitch.com/74dec8ba-4ed2-4ce5-a2c6-7dc366c298b8%2Fpexels-andre-furtado-1162251.jpg?v=1627571515566">
+            </div>
+            <div class = "center aligned icon">
+                <i class="huge blue atom icon"></i>
+            </div>
+            <div class="content">
+                <a class="header">Pressure</a>
+                <div class="description">
+                    <p>latest Pressure: ${_station.latestPressure} hpa</p>
+                    <p>Min Pressure: ${_station.minPressureReading} C</p>
+                    <p>Max Pressure: ${_station.maxPressureReading} C</p>
+                </div>
+                <div class = "center aligned icon">
+                    <div>
+                        #{if _station.pressureTrend == "rising" }
+                        <i class="big blue arrow alternate circle up icon"></i>
+                        #{/if}
+                        #{if _station.pressureTrend == "steady" }
+                        <i class="big blue arrows alternate horizontal icon"></i>
+                        #{/if}
+                        #{if _station.pressureTrend == "falling" }
+                        <i class="big blue arrow alternate circle down icon"></i>
+                        #{/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

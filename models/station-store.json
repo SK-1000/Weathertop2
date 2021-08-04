@@ -1,0 +1,127 @@
+{
+  "stationCollection": [
+    {
+      "id": "a903f260-ea55-11eb-a976-8fc9aa4b570f",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "stationname": "Marge station",
+      "readings": [
+        {
+          "id": "b18168a0-ea55-11eb-a976-8fc9aa4b570f",
+          "code": "600",
+          "temp": "1",
+          "windspeed": "1",
+          "winddirection": "1",
+          "pressure": "1"
+        }
+      ]
+    },
+    {
+      "id": "c49c00d0-ea55-11eb-a976-8fc9aa4b570f",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "stationname": "Homer station",
+      "readings": [
+        {
+          "id": "cd64d7f0-ea55-11eb-a976-8fc9aa4b570f",
+          "code": "700",
+          "temp": "2",
+          "windspeed": "2",
+          "winddirection": "2",
+          "pressure": "2"
+        }
+      ]
+    },
+    {
+      "id": "fad16a00-ea55-11eb-a976-8fc9aa4b570f",
+      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
+      "stationname": "Sheila Station",
+      "readings": [
+        {
+          "id": "04716740-ea56-11eb-a976-8fc9aa4b570f",
+          "code": "600",
+          "temp": "5",
+          "windspeed": "5",
+          "winddirection": "5",
+          "pressure": "5"
+        },
+        {
+          "id": "55125a20-f388-11eb-ba19-91913116f9d4",
+          "code": "400",
+          "temp": "2",
+          "windspeed": "5",
+          "winddirection": "5",
+          "pressure": "5000"
+        },
+        {
+          "id": "650aa3b0-f388-11eb-ba19-91913116f9d4",
+          "code": "400",
+          "temp": "6",
+          "windspeed": "2",
+          "winddirection": "7",
+          "pressure": "8000"
+        },
+        {
+          "id": "7a62a6c0-f39e-11eb-a650-53e65dcd4ed4",
+          "code": "100",
+          "temp": "10",
+          "windspeed": "5",
+          "winddirection": "5",
+          "pressure": "2000"
+        },
+        {
+          "id": "d6f1b840-f39e-11eb-9cdd-45ae23ece00a",
+          "code": "500",
+          "temp": "12",
+          "windspeed": "5",
+          "winddirection": "5",
+          "pressure": "7000"
+        }
+      ]
+    },
+    {
+      "id": "f4ca76a0-f398-11eb-9590-a576879d9d05",
+      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
+      "stationname": "Salthill",
+      "readings": [
+        {
+          "id": "032d2c10-f399-11eb-9590-a576879d9d05",
+          "code": "500",
+          "temp": "2",
+          "windspeed": "5",
+          "winddirection": "5",
+          "pressure": "7000"
+        },
+        {
+          "id": "0c8a2ce0-f399-11eb-9590-a576879d9d05",
+          "code": "500",
+          "temp": "1",
+          "windspeed": "5",
+          "winddirection": "5",
+          "pressure": "7000"
+        },
+        {
+          "id": "4f04c2b0-f399-11eb-9590-a576879d9d05",
+          "code": "100",
+          "temp": "3",
+          "windspeed": "5",
+          "winddirection": "5",
+          "pressure": "7000"
+        }
+      ]
+    },
+    {
+      "id": "18291520-f39e-11eb-a650-53e65dcd4ed4",
+      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
+      "stationname": "Rosslare",
+      "readings": [
+        {
+          "id": "286ce6a0-f39e-11eb-a650-53e65dcd4ed4",
+          "code": "100",
+          "temp": "3",
+          "windspeed": "5",
+          "winddirection": "5",
+          "pressure": "7000"
+        }
+      ]
+    }
+  ]
+}
