@@ -18,8 +18,8 @@
             <div class="content">
                 <a class="header">{{stationname}}</a>
                 <div class="description">
-                    <p> Latitude {{station.latitude}} </p>
-                    <p> Longitude {{station.longitude}}</p>
+                    <p> Latitude {{latitude}} </p>
+                    <p> Longitude {{longitude}}</p>
                 </div>
             </div>
         </div>
@@ -75,6 +75,7 @@
                 <a class="header">Temperature</a>
                 <div class="description">
                     <p>latest temp: {{latestReading.temp}}  C</p>
+                  <p>latest temp: {{latestTempFahr}}  F</p>
                     <p>Minimum temp: {{minTemp}} C</p>
                     <p>Maximum temp: {{maxTemp}} C</p>
                 </div>
@@ -137,7 +138,7 @@
             <div class="content">
                 <a class="header">Pressure</a>
                 <div class="description">
-                    <p>latest Pressure: ${_station.latestPressure} hpa</p>
+                    <p>latest Pressure: {{latestReading.pressure}} hpa</p>
                     <p>Min Pressure: ${_station.minPressureReading} C</p>
                     <p>Max Pressure: ${_station.maxPressureReading} C</p>
                 </div>
