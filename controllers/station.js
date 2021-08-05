@@ -1,37 +1,26 @@
 'use strict';
-
 const logger = require('../utils/logger');
+const stationAnalytics = require('../utils/station-Analytics');
 const stationStore = require('../models/station-store');
 const uuid = require('uuid');
-
 const station = {
   index(request, response) {
     const stationId = request.params.id;
-    logger.debug('Station id = ' + stationId);
-    const station = stationStore.getStation(stationId)
-    
-    
-    let latestReading = null;
-    //const station = stationStore.getStation(stationId)
-    if (station.readings.length > 0) {
-      latestReading = station.readings[0];
-      for (let i = 1; i < station.readings.length; i++) {
-      latestReading = station.readings[i];
-       
-      }
-    }
-    console.log(latestReading);
-      
-    
+    const station = stationStore.getStation(stationId);
+    // const latestReading = stationAnalytics.getLatestReading(station);
+    // const minTemp = stationAnalytics.getMinTemp(station);
+    //const latestTempFahr = stationAnalytics.getLatestReadingFahr(station);
     const viewData = {
       title: 'Station',  
       station: stationStore.getStation(stationId),
-      latestReading: latestReading,
-
+      //latestTempFahr: latestTempFahr,
+      minTemp: stationAnalytics.getMinTemp(station),
+      maxTemp: stationAnalytics.getMaxTemp(station),
+      latestReading: stationAnalytics.getLatestReading(station),
+      latestTempFahr: stationAnalytics.getLatestTempFahr(station),
     };
     response.render('station', viewData);
   },
-  
   deleteReading(request, response) {
     const stationId = request.params.id;
     const readingId = request.params.readingid;
@@ -39,7 +28,6 @@ const station = {
     stationStore.removeReading(stationId, readingId);
     response.redirect('/station/' + stationId);
   },
-  
   addReading(request, response) {
     const stationId = request.params.id;
     const station = stationStore.getStation(stationId);
@@ -56,5 +44,4 @@ const station = {
     logger.debug('New Reading = ', newReading);
   },
 };
-
 module.exports = station;
