@@ -29,38 +29,12 @@
                 <img src="https://cdn.glitch.com/74dec8ba-4ed2-4ce5-a2c6-7dc366c298b8%2Fpexels-megan-newman-837494.jpg?v=1627571519790">
             </div>
             <div class = "center aligned icon">
-                #{if {{getWeatherCode}} == "clear" }
-                <i class="huge pink sun icon"></i>
-                #{/if}
-                #{if _station.latestWeatherCodeStr == "rain" }
-                <i class="huge pink umbrella icon"></i>
-                #{/if}
-                #{if _station.latestWeatherCodeStr == "partial clouds" }
-                <i class="huge pink cloud sun icon"></i>
-                #{/if}
-                #{if _station.latestWeatherCodeStr == "cloudy" }
-                <i class="huge pink cloud icon"></i>
-                #{/if}
-                #{if _station.latestWeatherCodeStr == "light showers" }
-                <i class="huge pink cloud rain icon"></i>
-                #{/if}
-                #{if _station.latestWeatherCodeStr == "heavy showers" }
-                <i class="huge pink cloud showers heavy icon"></i>
-                #{/if}
-                #{if _station.latestWeatherCodeStr == "snow" }
-                <i class="huge pink snowflake icon"></i>
-                #{/if}
-                #{if _station.latestWeatherCodeStr == "thunder" }
-                <i class="huge pink bolt icon"></i>
-                #{/if}
-                #{if _station.latestWeatherCodeStr == "Invalid code" }
-                <i class="massive red exclamation circle icon"></i>
-                #{/if}
+              
             </div>
             <div class="content">
                 <a class="header">Weather</a>
                 <div class="description">
-                    <p> latest Weather: ${_station.latestWeatherCodeStr}  </p>
+                    <p> latest Weather:  {{latestWeatherCode}}   </p>
                 </div>
             </div>
         </div>
@@ -104,10 +78,10 @@
             <div class="content">
                 <a class="header">Wind Speed</a>
                 <div class="description">
-                    <p> latest WindSpeed ${_station.beaufort}</p>
-                    <p>${_station.convertToTextDir}</p>
+                    <p> latest WindSpeed {{latestWindReading}} </p>
+                    <p>{{latestWindDirection}}</p>
                     <p>Feels Like</p>
-                    <p>${_station.latestWindChill} C</p>
+                    <p>{{latestWindChill}} C</p>
                     <p>Min Wind Speed: ${_station.minWindReading} bft</p>
                     <p>Max Wind Speed: ${_station.maxWindReading} bft</p>
                 </div>

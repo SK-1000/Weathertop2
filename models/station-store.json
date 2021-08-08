@@ -55,80 +55,17 @@
       ]
     },
     {
-      "id": "fad16a00-ea55-11eb-a976-8fc9aa4b570f",
-      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationname": "Sheila Station",
-      "readings": [
-        {
-          "id": "04716740-ea56-11eb-a976-8fc9aa4b570f",
-          "code": "600",
-          "temp": "5",
-          "windspeed": "5",
-          "winddirection": "5",
-          "pressure": "5"
-        },
-        {
-          "id": "55125a20-f388-11eb-ba19-91913116f9d4",
-          "code": "400",
-          "temp": "2",
-          "windspeed": "5",
-          "winddirection": "5",
-          "pressure": "5000"
-        },
-        {
-          "id": "650aa3b0-f388-11eb-ba19-91913116f9d4",
-          "code": "400",
-          "temp": "6",
-          "windspeed": "2",
-          "winddirection": "7",
-          "pressure": "8000"
-        },
-        {
-          "id": "d7340cf0-f555-11eb-a2b0-158a665d72f1",
-          "code": "400",
-          "temp": "1",
-          "windspeed": "5",
-          "winddirection": "5",
-          "pressure": "7000"
-        }
-      ]
-    },
-    {
       "id": "f4ca76a0-f398-11eb-9590-a576879d9d05",
       "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
       "stationname": "Salthill",
       "readings": [
         {
-          "id": "032d2c10-f399-11eb-9590-a576879d9d05",
-          "code": "500",
+          "id": "390cc330-f601-11eb-b21e-e78d6195485e",
+          "code": "200",
           "temp": "2",
-          "windspeed": "5",
+          "windspeed": "6",
           "winddirection": "5",
-          "pressure": "7000"
-        },
-        {
-          "id": "0c8a2ce0-f399-11eb-9590-a576879d9d05",
-          "code": "500",
-          "temp": "1",
-          "windspeed": "5",
-          "winddirection": "5",
-          "pressure": "7000"
-        },
-        {
-          "id": "4f04c2b0-f399-11eb-9590-a576879d9d05",
-          "code": "100",
-          "temp": "3",
-          "windspeed": "5",
-          "winddirection": "5",
-          "pressure": "7000"
-        },
-        {
-          "id": "dd4694f0-f519-11eb-9dec-593af885c109",
-          "code": "400",
-          "temp": "10",
-          "windspeed": "5",
-          "winddirection": "5",
-          "pressure": "9000"
+          "pressure": "2000"
         }
       ]
     },

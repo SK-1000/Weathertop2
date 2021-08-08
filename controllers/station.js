@@ -1,23 +1,25 @@
 'use strict';
 const logger = require('../utils/logger');
 const stationAnalytics = require('../utils/station-Analytics');
+const conversions = require('../utils/conversions');
+const minMax = require('../utils/minMax');
 const stationStore = require('../models/station-store');
 const uuid = require('uuid');
 const station = {
   index(request, response) {
     const stationId = request.params.id;
     const station = stationStore.getStation(stationId);
-    // const latestReading = stationAnalytics.getLatestReading(station);
-    // const minTemp = stationAnalytics.getMinTemp(station);
-    //const latestTempFahr = stationAnalytics.getLatestReadingFahr(station);
     const viewData = {
       title: 'Station',  
       station: stationStore.getStation(stationId),
-      //latestTempFahr: latestTempFahr,
-      minTemp: stationAnalytics.getMinTemp(station),
-      maxTemp: stationAnalytics.getMaxTemp(station),
+      minTemp: minMax.getMinTemp(station),
+      maxTemp: minMax.getMaxTemp(station),
       latestReading: stationAnalytics.getLatestReading(station),
-      latestTempFahr: stationAnalytics.getLatestTempFahr(station),
+      latestTempFahr: conversions.getLatestTempFahr(station),
+      latestWeatherCode: conversions.getLatestWeatherCode(station),
+      latestWindReading: conversions.getLatestWindReading(station),
+      latestWindDirection: conversions.getLatestWindDirection(station),
+      latestWindChill: conversions.getLatestWindChill(station),
     };
     response.render('station', viewData);
   },
