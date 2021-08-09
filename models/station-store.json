@@ -3,98 +3,493 @@
     {
       "id": "a903f260-ea55-11eb-a976-8fc9aa4b570f",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "stationname": "Marge station",
+      "stationName": "Marge station",
+      "latitude": "2.0000001",
+      "longitude": "-9.55555",
       "readings": [
         {
           "id": "b18168a0-ea55-11eb-a976-8fc9aa4b570f",
           "code": "600",
           "temp": "1",
-          "windspeed": "1",
-          "winddirection": "1",
+          "windSpeed": "1",
+          "windDirection": "1",
           "pressure": "1"
         },
         {
           "id": "28f5f660-f557-11eb-9108-bbfc167815e7",
           "code": "500",
           "temp": "2",
-          "windspeed": "6",
-          "winddirection": "2",
+          "windSpeed": "6",
+          "windDirection": "2",
           "pressure": "7000"
+        },
+        {
+          "id": "3dd3bac0-f86a-11eb-ac31-e56e1c71810f",
+          "code": "500",
+          "temp": "6",
+          "windSpeed": "50",
+          "pressure": "2000"
+        },
+        {
+          "id": "48ee4a10-f86a-11eb-ac31-e56e1c71810f",
+          "code": "500",
+          "temp": "6",
+          "windSpeed": "45",
+          "pressure": "2000"
+        },
+        {
+          "id": "c9c17f70-f86c-11eb-927d-b361197ab611",
+          "code": "100",
+          "temp": "6",
+          "windSpeed": "50",
+          "windDirection": "200",
+          "pressure": "6000"
+        },
+        {
+          "id": "e8ab9f10-f86c-11eb-927d-b361197ab611",
+          "code": "100",
+          "temp": "7",
+          "windSpeed": "25",
+          "windDirection": "102",
+          "pressure": "6000"
+        },
+        {
+          "id": "9effd190-f8fa-11eb-be92-73e45830313e",
+          "code": "500",
+          "temp": "15",
+          "windSpeed": "20",
+          "windDirection": "142",
+          "pressure": "6000"
         }
-      ]
+      ],
+      "latestReading": {
+        "id": "48ee4a10-f86a-11eb-ac31-e56e1c71810f",
+        "code": "500",
+        "temp": "6",
+        "windSpeed": "45",
+        "pressure": "2000"
+      },
+      "latestWindReading": "4 bft",
+      "latestWindDirection": "South East",
+      "latestWindChill": 14,
+      "latestWeatherCode": "heavy showers",
+      "latestTempFahr": 59,
+      "minTemp": "1",
+      "maxTemp": "7",
+      "minPressure": "1",
+      "maxPressure": "7000",
+      "minWind": "1",
+      "maxWind": "6",
+      "threeMostRecentReadingsTemp": null,
+      "latestReadingTemp": "15",
+      "latestReadingPressure": "15"
     },
     {
       "id": "c49c00d0-ea55-11eb-a976-8fc9aa4b570f",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "stationname": "Homer station",
+      "stationName": "Homer station",
+      "latitude": "2.0000001",
+      "longitude": "-9.55555",
       "readings": [
         {
           "id": "cd64d7f0-ea55-11eb-a976-8fc9aa4b570f",
           "code": "700",
           "temp": "2",
-          "windspeed": "2",
-          "winddirection": "2",
+          "windSpeed": "2",
+          "windDirection": "2",
           "pressure": "2"
         },
         {
           "id": "fce148a0-f555-11eb-a2b0-158a665d72f1",
           "code": "100",
           "temp": "1",
-          "windspeed": "5",
-          "winddirection": "5",
+          "windSpeed": "5",
+          "windDirection": "5",
           "pressure": "2000"
         },
         {
           "id": "83af52f0-f556-11eb-b20c-13930ea7f32b",
           "code": "100",
           "temp": "3",
-          "windspeed": "5",
-          "winddirection": "5",
+          "windSpeed": "5",
+          "windDirection": "5",
           "pressure": "7000"
         }
-      ]
+      ],
+      "latestReading": {
+        "id": "83af52f0-f556-11eb-b20c-13930ea7f32b",
+        "code": "100",
+        "temp": "3",
+        "windSpeed": "5",
+        "windDirection": "5",
+        "pressure": "7000"
+      },
+      "latestWindReading": "1 bft",
+      "latestWindDirection": "North",
+      "latestWindChill": 2,
+      "latestWeatherCode": "clear",
+      "latestTempFahr": 37.4,
+      "minTemp": "1",
+      "maxTemp": "3",
+      "minPressure": "2",
+      "maxPressure": "7000",
+      "minWind": "2",
+      "maxWind": "5",
+      "threeMostRecentReadingsTemp": null,
+      "latestReadingTemp": "3",
+      "latestReadingPressure": "3"
     },
     {
       "id": "f4ca76a0-f398-11eb-9590-a576879d9d05",
       "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationname": "Salthill",
+      "stationName": "Salthill",
       "readings": [
+        {
+          "id": "032d2c10-f399-11eb-9590-a576879d9d05",
+          "code": "500",
+          "temp": "2",
+          "windSpeed": "5",
+          "windDirection": "5",
+          "pressure": "7000"
+        },
+        {
+          "id": "0c8a2ce0-f399-11eb-9590-a576879d9d05",
+          "code": "500",
+          "temp": "1",
+          "windSpeed": "5",
+          "windDirection": "5",
+          "pressure": "7000"
+        },
+        {
+          "id": "dd4694f0-f519-11eb-9dec-593af885c109",
+          "code": "400",
+          "temp": "10",
+          "windSpeed": "5",
+          "windDirection": "5",
+          "pressure": "9000"
+        },
         {
           "id": "390cc330-f601-11eb-b21e-e78d6195485e",
           "code": "200",
           "temp": "2",
-          "windspeed": "6",
-          "winddirection": "5",
+          "windSpeed": "6",
+          "windDirection": "5",
           "pressure": "2000"
+        },
+        {
+          "id": "202ee8f0-f905-11eb-afa6-117aa4af742f",
+          "code": "100",
+          "temp": "20",
+          "windSpeed": "60",
+          "windDirection": "102",
+          "pressure": "6000"
+        },
+        {
+          "id": "c2d88870-f907-11eb-9f08-3fd19f03eef8",
+          "code": "400",
+          "temp": "60",
+          "windSpeed": "50",
+          "windDirection": "50",
+          "pressure": "2000"
+        },
+        {
+          "id": "1a226b50-f908-11eb-845d-677a86c749af",
+          "code": "500",
+          "temp": "6",
+          "windSpeed": "3",
+          "windDirection": "60",
+          "pressure": "2000"
+        },
+        {
+          "id": "ae1e5e50-f939-11eb-8cd4-8322a8be9785",
+          "code": "500",
+          "temp": "4",
+          "windSpeed": "6",
+          "windDirection": "200",
+          "pressure": "6000",
+          "timestamp": "Mon Aug 09 2021 17:46:09 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "id": "5d994fc0-f93a-11eb-8cd4-8322a8be9785",
+          "code": "100",
+          "temp": "2",
+          "windSpeed": "5",
+          "windDirection": "100",
+          "pressure": "7000",
+          "timestamp": "Mon Aug 09 2021 17:51:03 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "id": "36bba300-f93d-11eb-b71e-aff0c697de58",
+          "code": "500",
+          "temp": "4",
+          "windSpeed": "6",
+          "windDirection": "100",
+          "pressure": "2000",
+          "timestamp": "Mon Aug 09 2021 18:11:27 GMT+0000 (Coordinated Universal Time)"
         }
-      ]
+      ],
+      "latestReading": {
+        "id": "390cc330-f601-11eb-b21e-e78d6195485e",
+        "code": "200",
+        "temp": "2",
+        "windSpeed": "6",
+        "windDirection": "5",
+        "pressure": "2000"
+      },
+      "latestWindReading": "2 bft",
+      "latestWindDirection": "East",
+      "latestWindChill": 3,
+      "latestWeatherCode": "heavy showers",
+      "latestTempFahr": 39.2,
+      "minTemp": "1",
+      "maxTemp": "60",
+      "minPressure": "2000",
+      "maxPressure": "9000",
+      "minWind": "3",
+      "maxWind": "60",
+      "threeMostRecentReadingsTemp": "steady",
+      "latestReadingTemp": "4",
+      "latestReadingPressure": "4"
     },
     {
       "id": "18291520-f39e-11eb-a650-53e65dcd4ed4",
       "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationname": "Rosslare",
+      "stationName": "Rosslare",
       "readings": [
         {
           "id": "286ce6a0-f39e-11eb-a650-53e65dcd4ed4",
           "code": "100",
           "temp": "3",
-          "windspeed": "5",
-          "winddirection": "5",
+          "windSpeed": "5",
+          "windDirection": "5",
           "pressure": "7000"
         }
-      ]
+      ],
+      "latestReading": {
+        "id": "286ce6a0-f39e-11eb-a650-53e65dcd4ed4",
+        "code": "100",
+        "temp": "3",
+        "windSpeed": "5",
+        "windDirection": "5",
+        "pressure": "7000"
+      },
+      "latestWindReading": "Awaiting Wind data",
+      "latestWindDirection": "North",
+      "latestWindChill": 0,
+      "latestWeatherCode": "Please enter correct code",
+      "latestTempFahr": "3",
+      "minTemp": "3",
+      "maxTemp": "3",
+      "minPressure": "7000",
+      "maxPressure": "7000",
+      "minWind": "5",
+      "maxWind": "5",
+      "threeMostRecentReadingsTemp": null,
+      "latestReadingTemp": {
+        "id": "286ce6a0-f39e-11eb-a650-53e65dcd4ed4",
+        "code": "100",
+        "temp": "3",
+        "windSpeed": "5",
+        "windDirection": "5",
+        "pressure": "7000"
+      },
+      "latestReadingPressure": {
+        "id": "286ce6a0-f39e-11eb-a650-53e65dcd4ed4",
+        "code": "100",
+        "temp": "3",
+        "windSpeed": "5",
+        "windDirection": "5",
+        "pressure": "7000"
+      }
     },
     {
       "id": "a391d390-f51a-11eb-9dec-593af885c109",
       "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationname": "Rosslare",
+      "stationName": "Rosslare",
       "readings": []
     },
     {
       "id": "47ba35c0-f51b-11eb-9dec-593af885c109",
       "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationname": "fdskfs;lkf",
+      "stationName": "fdskfs;lkf",
       "readings": []
+    },
+    {
+      "id": "72eec920-f900-11eb-8286-93290b2e7f78",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "stationName": "Hello Statoin",
+      "latitude": "2.0000001",
+      "longitude": "-65.0000",
+      "readings": []
+    },
+    {
+      "id": "97051120-f900-11eb-8286-93290b2e7f78",
+      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
+      "stationName": "choc station",
+      "latitude": "2.0000001",
+      "longitude": "-65.0000",
+      "readings": []
+    },
+    {
+      "id": "cda554a0-f901-11eb-8321-474173dbcc6b",
+      "userid": "b6f03090-f901-11eb-8321-474173dbcc6b",
+      "stationName": "Johns Station",
+      "latitude": "3.69858585",
+      "longitude": "-4.000000",
+      "readings": []
+    },
+    {
+      "id": "0e7017f0-f94c-11eb-87a3-d72da6d11baf",
+      "userid": "00be14e0-f94c-11eb-87a3-d72da6d11baf",
+      "stationName": "Mary's Station",
+      "latitude": "12.555555",
+      "longitude": "-4.000000",
+      "readings": [
+        {
+          "id": "b6470dc0-f94d-11eb-a166-3f169df0948b",
+          "code": "500",
+          "temp": "5",
+          "windSpeed": "50",
+          "windDirection": "50",
+          "pressure": "5000",
+          "timestamp": "Mon Aug 09 2021 20:09:33 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "id": "906426a0-f94e-11eb-95f3-d92f21185f5b",
+          "code": "100",
+          "temp": "1",
+          "windSpeed": "10",
+          "windDirection": "100",
+          "pressure": "1000",
+          "timestamp": "Mon Aug 09 2021 20:15:39 GMT+0000 (Coordinated Universal Time)"
+        }
+      ],
+      "latestWindReading": "2 bft",
+      "latestWindDirection": "East",
+      "latestWindChill": -2,
+      "latestWeatherCode": "clear",
+      "latestTempFahr": 33.8,
+      "minTemp": "1",
+      "maxTemp": "5",
+      "minPressure": "1000",
+      "maxPressure": "5000",
+      "minWind": "10",
+      "maxWind": "50",
+      "threeMostRecentReadingsTemp": null,
+      "latestReadingTemp": "1",
+      "latestReadingPressure": "1"
+    },
+    {
+      "id": "1c49dc60-f94e-11eb-a166-3f169df0948b",
+      "userid": "00be14e0-f94c-11eb-87a3-d72da6d11baf",
+      "stationName": "mary's second station",
+      "latitude": "2.0000001",
+      "longitude": "-9.55555",
+      "readings": [
+        {
+          "id": "5fbf48c0-f955-11eb-819f-5db1a87ed8db",
+          "code": "100",
+          "temp": "4",
+          "windSpeed": "6",
+          "windDirection": "60",
+          "pressure": "2000",
+          "timestamp": "Mon Aug 09 2021 21:04:23 GMT+0000 (Coordinated Universal Time)"
+        }
+      ],
+      "latestReadingTemp": {
+        "id": "5fbf48c0-f955-11eb-819f-5db1a87ed8db",
+        "code": "100",
+        "temp": "4",
+        "windSpeed": "6",
+        "windDirection": "60",
+        "pressure": "2000",
+        "timestamp": "Mon Aug 09 2021 21:04:23 GMT+0000 (Coordinated Universal Time)"
+      },
+      "latestReadingPressure": {
+        "id": "5fbf48c0-f955-11eb-819f-5db1a87ed8db",
+        "code": "100",
+        "temp": "4",
+        "windSpeed": "6",
+        "windDirection": "60",
+        "pressure": "2000",
+        "timestamp": "Mon Aug 09 2021 21:04:23 GMT+0000 (Coordinated Universal Time)"
+      },
+      "latestWindReading": "Awaiting Wind data",
+      "latestWindDirection": "East North East",
+      "latestWindChill": 0,
+      "latestWeatherCode": "Please enter correct code",
+      "latestTempFahr": "4",
+      "minTemp": "4",
+      "maxTemp": "4",
+      "minPressure": "2000",
+      "maxPressure": "2000",
+      "minWind": "6",
+      "maxWind": "6"
+    },
+    {
+      "id": "ecac4740-f952-11eb-ae52-bfadf949e92a",
+      "userid": "00be14e0-f94c-11eb-87a3-d72da6d11baf",
+      "stationName": "mary's third station",
+      "latitude": "45.5555",
+      "longitude": "-65.0000",
+      "readings": [
+        {
+          "id": "d2370690-f955-11eb-80cc-a710588c2e9b",
+          "code": "400",
+          "temp": "6",
+          "windSpeed": "6",
+          "windDirection": "100",
+          "pressure": "2000",
+          "timestamp": "Mon Aug 09 2021 21:07:35 GMT+0000 (Coordinated Universal Time)"
+        }
+      ],
+      "latestReadingTemp": {
+        "id": "d2370690-f955-11eb-80cc-a710588c2e9b",
+        "code": "400",
+        "temp": "6",
+        "windSpeed": "6",
+        "windDirection": "100",
+        "pressure": "2000",
+        "timestamp": "Mon Aug 09 2021 21:07:35 GMT+0000 (Coordinated Universal Time)"
+      },
+      "latestReadingPressure": {
+        "id": "d2370690-f955-11eb-80cc-a710588c2e9b",
+        "code": "400",
+        "temp": "6",
+        "windSpeed": "6",
+        "windDirection": "100",
+        "pressure": "2000",
+        "timestamp": "Mon Aug 09 2021 21:07:35 GMT+0000 (Coordinated Universal Time)"
+      },
+      "latestWindReading": "Awaiting Wind data",
+      "latestWindDirection": "East",
+      "latestWindChill": 0,
+      "latestWeatherCode": "Please enter correct code",
+      "latestTempFahr": "6",
+      "minTemp": "6",
+      "maxTemp": "6",
+      "minPressure": "2000",
+      "maxPressure": "2000",
+      "minWind": "6",
+      "maxWind": "6"
+    },
+    {
+      "id": "03e97fb0-f956-11eb-b088-ab10600215df",
+      "userid": "00be14e0-f94c-11eb-87a3-d72da6d11baf",
+      "stationName": "mary's forth station",
+      "latitude": "45.5555",
+      "longitude": "-65.0000",
+      "readings": [
+        {
+          "id": "13cf79c0-f956-11eb-b088-ab10600215df",
+          "code": "100",
+          "temp": "1",
+          "windSpeed": "1",
+          "windDirection": "100",
+          "pressure": "7000",
+          "timestamp": "Mon Aug 09 2021 21:09:25 GMT+0000 (Coordinated Universal Time)"
+        }
+      ]
     }
   ]
 }

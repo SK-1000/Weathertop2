@@ -16,7 +16,7 @@
                 <i class="huge blue map marker icon"></i>
             </div>
             <div class="content">
-                <a class="header">{{stationname}}</a>
+                <a class="header">{{stationName}}</a>
                 <div class="description">
                     <p> Latitude {{latitude}} </p>
                     <p> Longitude {{longitude}}</p>
@@ -48,22 +48,20 @@
             <div class="content">
                 <a class="header">Temperature</a>
                 <div class="description">
-                    <p>latest temp: {{latestReading.temp}}  C</p>
+                    <p>latest temp: {{latestReadingTemp}}  C</p>
                   <p>latest temp: {{latestTempFahr}}  F</p>
                     <p>Minimum temp: {{minTemp}} C</p>
                     <p>Maximum temp: {{maxTemp}} C</p>
                 </div>
                 <div class = "center aligned icon">
-                    <div>
-                        #{if _station.tempTrend == "rising" }
+                  <div>
+                        {{#if tempRising }}
                         <i class="big blue arrow alternate circle up icon"></i>
-                        #{/if}
-                        #{if _station.tempTrend == "steady" }
+                        {{else steady }}
                         <i class="big blue arrows alternate horizontal icon"></i>
-                        #{/if}
-                        #{if _station.tempTrend == "falling" }
+                        {{else tempFalling }}
                         <i class="big blue arrow alternate circle down icon"></i>
-                        #{/if}
+                        {{/if}} 
                     </div>
                 </div>
             </div>
@@ -78,12 +76,12 @@
             <div class="content">
                 <a class="header">Wind Speed</a>
                 <div class="description">
-                    <p> latest WindSpeed {{latestWindReading}} </p>
+                    <p> latest WindSpeed: {{latestWindReading}} </p>
                     <p>{{latestWindDirection}}</p>
                     <p>Feels Like</p>
                     <p>{{latestWindChill}} C</p>
-                    <p>Min Wind Speed: ${_station.minWindReading} bft</p>
-                    <p>Max Wind Speed: ${_station.maxWindReading} bft</p>
+                    <p>Min Wind Speed: {{minWind}} bft</p>
+                    <p>Max Wind Speed: {{maxWind}} bft</p>
                 </div>
                 <div class = "center aligned icon">
                     <div>
@@ -112,21 +110,13 @@
             <div class="content">
                 <a class="header">Pressure</a>
                 <div class="description">
-                    <p>latest Pressure: {{latestReading.pressure}} hpa</p>
-                    <p>Min Pressure: ${_station.minPressureReading} C</p>
-                    <p>Max Pressure: ${_station.maxPressureReading} C</p>
+                    <p>latest Pressure: {{latestReadingPressure}} hpa</p>
+                    <p>Min Pressure: {{minPressure}} hpa </p>
+                    <p>Max Pressure: {{maxPressure}} hpa</p>
                 </div>
                 <div class = "center aligned icon">
                     <div>
-                        #{if _station.pressureTrend == "rising" }
-                        <i class="big blue arrow alternate circle up icon"></i>
-                        #{/if}
-                        #{if _station.pressureTrend == "steady" }
-                        <i class="big blue arrows alternate horizontal icon"></i>
-                        #{/if}
-                        #{if _station.pressureTrend == "falling" }
-                        <i class="big blue arrow alternate circle down icon"></i>
-                        #{/if}
+                        
                     </div>
                 </div>
             </div>

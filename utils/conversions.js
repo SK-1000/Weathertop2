@@ -2,8 +2,7 @@
 
 const conversions = {
   
-
-  getLatestTempFahr(station) {
+getLatestTempFahr(station) {
     let latestReadingTempFahr = null;
     if (station.readings.length > 0) {
       latestReadingTempFahr = station.readings[0].temp;
@@ -13,86 +12,87 @@ const conversions = {
     }
     return latestReadingTempFahr ;
   },
+
   
    //NOT WORKING FOR SOME REASON
   getLatestWeatherCode(station) {
-    let weatherCode = null;
     let latestWeatherCode = 0;
+    let textCode = "Awaiting code entry";
+ 
     if (station.readings.length > 0) {
       latestWeatherCode = station.readings[0];
         for (let i = 1; i < station.readings.length; i++) {
-        latestWeatherCode = station.readings[i];
+        latestWeatherCode = Number(station.readings[i].code);
       }
 
-    
-    switch (latestWeatherCode.code) {
+    switch (latestWeatherCode) {
   case 100:
-    weatherCode = "clear";
+    textCode = "clear";
     break;
   case 200:
-    weatherCode = "partial Clouds";
+    textCode = "partial Clouds";
     break;
   case 300:
-     weatherCode = "cloudy";
+     textCode = "cloudy";
     break;
   case 400:
-    weatherCode = "light showers";
+    textCode = "light showers";
     break;
   case 500:
-    weatherCode = "heavy showers";
+    textCode = "heavy showers";
     break;
   case 600:
-    weatherCode = "rain";
+    textCode = "rain";
     break;
   case 700:
-    weatherCode = "snow";
+    textCode = "snow";
     break;
       default:
-       weatherCode = "Please enter correct code";
+       textCode = "Please enter correct code";
     }     
-  
+ 
     }
-  return weatherCode; 
-  
+   return textCode; 
+
 },
 
-  
-  
   //latest wind beaufort
   getLatestWindReading(station) {
-    let beaufort = "No Wind Info Available";
     let latestWindReading = null;
+    let beaufort = "Awaiting Wind data";
+    
     if (station.readings.length > 0) {
       latestWindReading = station.readings[0];
         for (let i = 1; i < station.readings.length; i++) {
         latestWindReading = station.readings[i];
-      }
       
-       if(latestWindReading.windspeed <= 1 ) {
+      
+       if(latestWindReading.windSpeed <= 1 ) {
          beaufort = "0 bft";
-       } else if (latestWindReading.windspeed > 1 && latestWindReading.windspeed <= 5) {
+       } else if (latestWindReading.windSpeed > 1 && latestWindReading.windSpeed <= 5) {
          beaufort = "1 bft";
-       } else if (latestWindReading.windspeed >= 6 && latestWindReading.windspeed <= 11) {
+       } else if (latestWindReading.windSpeed >= 6 && latestWindReading.windSpeed <= 11) {
          beaufort = "2 bft";
-      } else if (latestWindReading.windspeed >= 12 && latestWindReading.windspeed <= 19) {
+      } else if (latestWindReading.windSpeed >= 12 && latestWindReading.windSpeed <= 19) {
          beaufort = "3 bft";
-       } else if (latestWindReading.windspeed >= 20 && latestWindReading.windspeed <= 28) {
+       } else if (latestWindReading.windSpeed >= 20 && latestWindReading.windSpeed <= 28) {
          beaufort = "4 bft";
-       } else if (latestWindReading.windspeed >= 29 && latestWindReading.windspeed <= 38) {
+       } else if (latestWindReading.windSpeed >= 29 && latestWindReading.windSpeed <= 38) {
          beaufort = "5 bft";
-       } else if (latestWindReading.windspeed >= 39 && latestWindReading.windspeed <= 49) {
+       } else if (latestWindReading.windSpeed >= 39 && latestWindReading.windSpeed <= 49) {
          beaufort = "6 bft";
-       } else if (latestWindReading.windspeed >= 50 && latestWindReading.windspeed <= 11) {
+       } else if (latestWindReading.windSpeed >= 50 && latestWindReading.windSpeed <= 11) {
          beaufort = "7 bft";
-       } else if (latestWindReading.windspeed >= 62 && latestWindReading.windspeed <= 74) {
+       } else if (latestWindReading.windSpeed >= 62 && latestWindReading.windSpeed <= 74) {
          beaufort = "8 bft";
-       } else if (latestWindReading.windspeed >= 75 && latestWindReading.windspeed <= 88) {
+       } else if (latestWindReading.windSpeed >= 75 && latestWindReading.windSpeed <= 88) {
          beaufort = "9 bft";
-       } else if (latestWindReading.windspeed >= 89 && latestWindReading.windspeed <= 102) {
+       } else if (latestWindReading.windSpeed >= 89 && latestWindReading.windSpeed <= 102) {
          beaufort = "10 bft";
-       } else if (latestWindReading.windspeed >= 103 && latestWindReading.windspeed <= 117) {
+       } else if (latestWindReading.windSpeed >= 103 && latestWindReading.winSspeed <= 117) {
          beaufort = "11 bft";
        }
+        }
       return beaufort;
     }
   },
@@ -107,40 +107,41 @@ const conversions = {
         latestWindDirection = station.readings[i];
       }
       
-if ((latestWindDirection.winddirection >= 348.75) && (latestWindDirection.winddirection <= 360) || (latestWindDirection.winddirection >= 0) &&
-      (latestWindDirection.winddirection <= 11.25)) {
+if ((latestWindDirection.windDirection >= 348.75) && (latestWindDirection.windDirection <= 360) || (latestWindDirection.windDirection >= 0) &&
+      (latestWindDirection.windDirection <= 11.25)) {
     convertToDirection = "North";
-  } else if ((latestWindDirection.winddirection >= 11.25) && (latestWindDirection.winddirection <= 33.75)) {
+  } else if ((latestWindDirection.windDirection >= 11.25) && (latestWindDirection.windDirection <= 33.75)) {
     convertToDirection = "North North East";
-  } else if ((latestWindDirection.winddirection >= 33.75) && (latestWindDirection.winddirection <= 56.25)) {
+  } else if ((latestWindDirection.windDirection >= 33.75) && (latestWindDirection.windDirection <= 56.25)) {
     convertToDirection = "North East";
-  } else if ((latestWindDirection.winddirection >= 56.25) && (latestWindDirection.winddirection <= 78.75)) {
+  } else if ((latestWindDirection.windDirection >= 56.25) && (latestWindDirection.windDirection <= 78.75)) {
     convertToDirection = "East North East";
-  } else if ((latestWindDirection.winddirection >= 78.25) && (latestWindDirection.winddirection <= 101.25)) {
+  } else if ((latestWindDirection.windDirection >= 78.25) && (latestWindDirection.windDirection <= 101.25)) {
     convertToDirection = "East";
-  } else if ((latestWindDirection.winddirection >= 101.25) && (latestWindDirection.winddirection <= 123.75)) {
+  } else if ((latestWindDirection.windDirection >= 101.25) && (latestWindDirection.windDirection <= 123.75)) {
     convertToDirection = "East South East";
-  } else if ((latestWindDirection.winddirection >= 123.75) && (latestWindDirection.winddirection <= 146.25)) {
+  } else if ((latestWindDirection.windDirection >= 123.75) && (latestWindDirection.windDirection <= 146.25)) {
     convertToDirection = "South East";
-  } else if ((latestWindDirection.winddirection >= 146.25) && (latestWindDirection.winddirection <= 168.75)) {
+  } else if ((latestWindDirection.windDirection >= 146.25) && (latestWindDirection.windDirection <= 168.75)) {
     convertToDirection = "South South East";
-  } else if ((latestWindDirection.winddirection >= 168.75) && (latestWindDirection.winddirection <= 191.25)) {
+  } else if ((latestWindDirection.windDirection >= 168.75) && (latestWindDirection.windDirection <= 191.25)) {
     convertToDirection = "South";
-  } else if ((latestWindDirection.winddirection >= 191.25) && (latestWindDirection.winddirection <= 213.75)) {
+  } else if ((latestWindDirection.windDirection >= 191.25) && (latestWindDirection.windDirection <= 213.75)) {
     convertToDirection = "South South West";
-  } else if ((latestWindDirection.winddirection >= 213.75) && (latestWindDirection.winddirection <= 236.25)) {
+  } else if ((latestWindDirection.windDirection >= 213.75) && (latestWindDirection.windDirection <= 236.25)) {
     convertToDirection = "South West";
-  } else if ((latestWindDirection.winddirection >= 236.25) && (latestWindDirection.winddirection <= 258.75)) {
+  } else if ((latestWindDirection.windDirection >= 236.25) && (latestWindDirection.windDirection <= 258.75)) {
     convertToDirection = "West South West";
-  } else if ((latestWindDirection.winddirection >= 258.75) && (latestWindDirection.winddirection <= 281.25)) {
+  } else if ((latestWindDirection.windDirection >= 258.75) && (latestWindDirection.windDirection <= 281.25)) {
     convertToDirection = "West";
-  } else if ((latestWindDirection.winddirection >= 281.25) && (latestWindDirection.winddirection <= 303.75)) {
+  } else if ((latestWindDirection.windDirection >= 281.25) && (latestWindDirection.windDirection <= 303.75)) {
     convertToDirection = "West North West";
-  } else if ((latestWindDirection.winddirection >= 303.75) && (latestWindDirection.winddirection <= 326.25)) {
+  } else if ((latestWindDirection.windDirection >= 303.75) && (latestWindDirection.windDirection <= 326.25)) {
     convertToDirection = "North West";
-  } else if ((latestWindDirection.winddirection >= 236.25) && (latestWindDirection.winddirection <= 348.75)) {
+  } else if ((latestWindDirection.windDirection >= 236.25) && (latestWindDirection.windDirection <= 348.75)) {
     convertToDirection = "North North West";
   }
+
 
 }
 return convertToDirection;
@@ -155,7 +156,7 @@ return convertToDirection;
       latestwindChillReading = station.readings[0];
         for (let i = 1; i < station.readings.length; i++) {
         latestwindChillReading = station.readings[i];
-          latestWindChill = Math.round(13.12 + 0.6215 * latestwindChillReading.temp - 11.37 * Math.pow(latestwindChillReading.windspeed, 0.16) + 0.3965 * latestwindChillReading.temp * Math.pow(latestwindChillReading.windspeed, 0.16));
+          latestWindChill = Math.round(13.12 + 0.6215 * latestwindChillReading.temp - 11.37 * Math.pow(latestwindChillReading.windSpeed, 0.16) + 0.3965 * latestwindChillReading.temp * Math.pow(latestwindChillReading.windSpeed, 0.16));
       }
     }
      return latestWindChill;
