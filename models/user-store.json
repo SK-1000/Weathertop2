@@ -20,6 +20,20 @@
       "email": "sheilafleming81@gmail.com",
       "password": "hello",
       "id": "ef854360-ea55-11eb-a976-8fc9aa4b570f"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "JohnDoe@JohnDoeInc.ie",
+      "password": "hello",
+      "id": "b6f03090-f901-11eb-8321-474173dbcc6b"
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Doe",
+      "email": "marydoe@doe.ie",
+      "password": "secret",
+      "id": "00be14e0-f94c-11eb-87a3-d72da6d11baf"
     }
   ]
 }

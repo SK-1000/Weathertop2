@@ -4,7 +4,13 @@ const stationAnalytics = require('../utils/station-Analytics');
 const conversions = require('../utils/conversions');
 const minMax = require('../utils/minMax');
 const stationStore = require('../models/station-store');
+const trends = require('../utils/trends');
 const uuid = require('uuid');
+const dashboard = require ('./dashboard.js');
+
+
+
+
 const station = {
   index(request, response) {
     const stationId = request.params.id;
@@ -14,12 +20,21 @@ const station = {
       station: stationStore.getStation(stationId),
       minTemp: minMax.getMinTemp(station),
       maxTemp: minMax.getMaxTemp(station),
-      latestReading: stationAnalytics.getLatestReading(station),
+      minPressure: minMax.getMinPressure(station),
+      maxPressure: minMax.getMaxPressure(station),
+      latestReadingTemp: stationAnalytics.getLatestReadingTemp(station),
+      latestReadingPressure: stationAnalytics.getLatestReadingPressure(station),
       latestTempFahr: conversions.getLatestTempFahr(station),
       latestWeatherCode: conversions.getLatestWeatherCode(station),
       latestWindReading: conversions.getLatestWindReading(station),
       latestWindDirection: conversions.getLatestWindDirection(station),
       latestWindChill: conversions.getLatestWindChill(station),
+      latitude: station.latitude,
+      longitude: station.longitude,
+      
+      
+      
+      
     };
     response.render('station', viewData);
   },
@@ -37,11 +52,14 @@ const station = {
       id: uuid.v1(),
       code: request.body.code,
       temp: request.body.temp,
-      windspeed: request.body.windspeed,
-      winddirection: request.body.winddirection,
+      windSpeed: request.body.windSpeed,
+      windDirection: request.body.windDirection,
       pressure: request.body.pressure,
+      timestamp: Date(),
+      
     };
     stationStore.addReading(stationId, newReading);
+    
     response.redirect('/station/' + stationId);
     logger.debug('New Reading = ', newReading);
   },

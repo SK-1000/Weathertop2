@@ -6,6 +6,8 @@
  */
 
 
+const conversions = require('../utils/conversions');
+const minMax = require('../utils/minMax');
 
 
 "use strict";
@@ -14,17 +16,30 @@ const stationAnalytics = {
 
 
   
-  getLatestReading(station) {
-    let latestReading = null;
+  getLatestReadingTemp(station) {
+    let latestReadingTemp = null;
     if (station.readings.length > 0) {
-      latestReading = station.readings[0];
+      latestReadingTemp = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
-        latestReading = station.readings[i];
+        latestReadingTemp = station.readings[i].temp;
       }
     }
-    return latestReading;
+    return latestReadingTemp;
   },
-
+  
+  getLatestReadingPressure(station) {
+    let latestReadingPressure = null;
+    if (station.readings.length > 0) {
+      latestReadingPressure = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        latestReadingPressure = station.readings[i].temp;
+      }
+    }
+    return latestReadingPressure;
+  },
+  
+  
+  
  
   };   
       module.exports = stationAnalytics;
