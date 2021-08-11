@@ -24,12 +24,12 @@ const updateReadings = {
     station.maxPressure = minMax.getMaxPressure(station);
     station.minWind = minMax.getMinWind(station);
     station.maxWind = minMax.getMaxWind(station);
-    
+   
   
     
     }
   
   
-    
+ 
 };
  module.exports = updateReadings;
