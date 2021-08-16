@@ -16,7 +16,7 @@
                 <i class="huge blue map marker icon"></i>
             </div>
             <div class="content">
-                <a class="header">{{stationName}}</a>
+                <a class="header">{{station.stationName}}</a>
                 <div class="description">
                     <p> Latitude {{latitude}} </p>
                     <p> Longitude {{longitude}}</p>
@@ -29,8 +29,21 @@
                 <img src="https://cdn.glitch.com/74dec8ba-4ed2-4ce5-a2c6-7dc366c298b8%2Fpexels-megan-newman-837494.jpg?v=1627571519790">
             </div>
             <div class = "center aligned icon">
-              
+           {{#if pinkSun}}
+                <i class="huge pink sun icon"></i>
+           {{else}}
+              {{#if pinkUmbrella}}
+                <i class="huge pink umbrella icon"></i>
+              {{else redWarn}}
+              <i class="massive red exclamation circle icon"></i>
+           {{/if}}   
+          {{/if}} 
             </div>
+          
+         
+          
+          
+          
             <div class="content">
                 <a class="header">Weather</a>
                 <div class="description">
@@ -57,7 +70,7 @@
                   <div>
                         {{#if tempRising }}
                         <i class="big blue arrow alternate circle up icon"></i>
-                        {{else steady }}
+                        {{else tempSteady }}
                         <i class="big blue arrows alternate horizontal icon"></i>
                         {{else tempFalling }}
                         <i class="big blue arrow alternate circle down icon"></i>
@@ -85,15 +98,7 @@
                 </div>
                 <div class = "center aligned icon">
                     <div>
-                        #{if _station.windTrend == "rising" }
-                        <i class="big blue arrow alternate circle up icon"></i>
-                        #{/if}
-                        #{if _station.windTrend == "steady" }
-                        <i class="big blue arrows alternate horizontal icon"></i>
-                        #{/if}
-                        #{if _station.windTrend == "falling" }
-                        <i class="big blue arrow alternate circle down icon"></i>
-                        #{/if}
+                     
                     </div>
                 </div>
             </div>

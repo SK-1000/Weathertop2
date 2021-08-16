@@ -10,20 +10,24 @@ getLatestTempFahr(station) {
         latestReadingTempFahr = station.readings[i].temp * 9 / 5 + 32;
       }
     }
+
     return latestReadingTempFahr ;
+
   },
 
   
-   //NOT WORKING FOR SOME REASON
+   //NOT WORKING FOR SOME REASON for the first reading in a station
   getLatestWeatherCode(station) {
-    let latestWeatherCode = 0;
+    let latestWeatherCode = null;
     let textCode = "Awaiting code entry";
- 
+
+    
+    
     if (station.readings.length > 0) {
-      latestWeatherCode = station.readings[0];
-        for (let i = 1; i < station.readings.length; i++) {
-        latestWeatherCode = Number(station.readings[i].code);
-      }
+      latestWeatherCode = station.readings[0].code;
+        for (let i = 0; i < station.readings.length; i++) {
+        latestWeatherCode = Number(station.readings[i].code)
+          }
 
     switch (latestWeatherCode) {
   case 100:
@@ -49,13 +53,53 @@ getLatestTempFahr(station) {
     break;
       default:
        textCode = "Please enter correct code";
-    }     
- 
+  }     
     }
-   return textCode; 
-
+    
+   return textCode;   
+     
 },
 
+
+  //return key for each weather icon THIS IS NOT WORKING YET
+  
+  getPinkSun(station){
+    let icon = null;
+    
+    if (this.textCode = "clear"){
+      icon = this.textCode;
+    }
+    return icon
+    
+    console.log(this.textCode);
+  },
+  
+    getPinkUmbrella(station){
+    let icon = null;
+    
+    if (this.textCode = "rain"){
+      icon = this.textCode;
+    }
+    return icon
+    
+    console.log(icon);
+  },
+  
+  getRedWarn(station){
+    let icon = null;
+    
+    if (this.textCode = "Please enter correct code"){
+      icon = this.textCode;
+    }
+    return icon
+    
+    console.log(icon);
+  },
+  
+  
+  
+  
+  
   //latest wind beaufort
   getLatestWindReading(station) {
     let latestWindReading = null;
@@ -63,7 +107,7 @@ getLatestTempFahr(station) {
     
     if (station.readings.length > 0) {
       latestWindReading = station.readings[0];
-        for (let i = 1; i < station.readings.length; i++) {
+        for (let i = 0; i < station.readings.length; i++) {
         latestWindReading = station.readings[i];
       
       
@@ -91,6 +135,8 @@ getLatestTempFahr(station) {
          beaufort = "10 bft";
        } else if (latestWindReading.windSpeed >= 103 && latestWindReading.winSspeed <= 117) {
          beaufort = "11 bft";
+       } else {
+        beaufort = "Enter a number between 1 - 117 for valid code";
        }
         }
       return beaufort;
