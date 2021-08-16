@@ -24,12 +24,13 @@ const updateReadings = {
     station.maxPressure = minMax.getMaxPressure(station);
     station.minWind = minMax.getMinWind(station);
     station.maxWind = minMax.getMaxWind(station);
-    
-  
-    
+    station.pinkSun = conversions.getPinkSun(station);
+    station.pinkUmbrella = conversions.getPinkUmbrella(station);
+    station.redWarn = conversions.getRedWarn(station);
+    //station.tempIcon = trends.getTempIcon(station);
     }
   
   
-    
+ 
 };
  module.exports = updateReadings;

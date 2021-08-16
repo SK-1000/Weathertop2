@@ -1,4 +1,7 @@
+var _ = require('lodash');
+
 "use strict";
+
 
 const logger = require("../utils/logger");
 const stationStore = require('../models/station-store');
@@ -25,6 +28,10 @@ const dashboard = {
       }
     }
     
+ 
+     
+
+     _.sortBy(stations, ['stationName'], ['asc']);  //DOESNT WORK ATTEMPT TO ALPHABETISE 
    
     const viewData = {
       title: 'Station Dashboard',

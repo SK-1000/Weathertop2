@@ -37,6 +37,12 @@ const stationStore = {
     station.readings.push(reading);
     this.store.save();
   },
+  
+  addAutoReading(id, reading) {
+    const station = this.getStation(id);
+    station.readings.push(reading);
+    this.store.save();
+  },
 
   removeReading(id, readingId) {
     const station = this.getStation(id);
