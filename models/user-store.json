@@ -62,6 +62,27 @@
       "email": "orla@orla.com",
       "password": "secret",
       "id": "f5ddbbf0-fb5a-11eb-b8bc-bb744cb2a3eb"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Dunne",
+      "email": "john@dunne.com",
+      "password": "secret",
+      "id": "fdbb4b80-09ba-11ec-9cfc-cb64b08fa78d"
+    },
+    {
+      "firstName": "ollie",
+      "lastName": "Kirwan",
+      "email": "ollie@kirwan.com",
+      "password": "secret",
+      "id": "f463c4b0-0a85-11ec-8213-d7a1ce42ad42"
+    },
+    {
+      "firstName": "Leo",
+      "lastName": "Leo",
+      "email": "leo@leo.com",
+      "password": "secret",
+      "id": "d593ce20-0ef6-11ec-94b5-2d3f5e98e5fd"
     }
   ]
 }

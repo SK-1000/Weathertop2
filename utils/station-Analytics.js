@@ -5,20 +5,15 @@
  *
  */
 
+const conversions = require("../utils/conversions");
+const minMax = require("../utils/minMax");
 
-const conversions = require('../utils/conversions');
-const minMax = require('../utils/minMax');
-
-
-"use strict";
+("use strict");
 
 const stationAnalytics = {
-
-
-  
   getLatestReadingTemp(station) {
     let latestReadingTemp = null;
-   
+
     if (station.readings.length > 0) {
       latestReadingTemp = station.readings[0].temp;
       for (let i = 1; i < station.readings.length; i++) {
@@ -26,9 +21,8 @@ const stationAnalytics = {
       }
     }
     return latestReadingTemp;
-    
   },
-  
+
   getLatestReadingPressure(station) {
     let latestReadingPressure = null;
     if (station.readings.length > 0) {
@@ -38,11 +32,6 @@ const stationAnalytics = {
       }
     }
     return latestReadingPressure;
-  },
-  
- 
-  };   
-      module.exports = stationAnalytics;
- 
-    
-      
+  }
+};
+module.exports = stationAnalytics;

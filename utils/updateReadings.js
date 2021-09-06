@@ -1,17 +1,16 @@
-const conversions = require('../utils/conversions');
-const stationAnalytics = require('../utils/station-Analytics');
-const minMax = require('../utils/minMax');
-const trends = require('../utils/trends');
+const conversions = require("../utils/conversions");
+const stationAnalytics = require("../utils/station-Analytics");
+const minMax = require("../utils/minMax");
+const trends = require("../utils/trends");
 
-
-"use strict";
+("use strict");
 
 const updateReadings = {
-  
-    getUpdateReading(station) {
-      
+  getUpdateReading(station) {
     station.latestReadingTemp = stationAnalytics.getLatestReadingTemp(station);
-    station.latestReadingPressure = stationAnalytics.getLatestReadingPressure(station);
+    station.latestReadingPressure = stationAnalytics.getLatestReadingPressure(
+      station
+    );
     station.latestWindReading = conversions.getLatestWindReading(station);
     station.latestWindReading = conversions.getLatestWindReading(station);
     station.latestWindDirection = conversions.getLatestWindDirection(station);
@@ -27,10 +26,7 @@ const updateReadings = {
     station.pinkSun = conversions.getPinkSun(station);
     station.pinkUmbrella = conversions.getPinkUmbrella(station);
     station.redWarn = conversions.getRedWarn(station);
-    //station.tempIcon = trends.getTempIcon(station);
-    }
-  
-  
- 
+    //station.tempTrend = trends.getThreelatestTrends(station);
+  }
 };
- module.exports = updateReadings;
+module.exports = updateReadings;
