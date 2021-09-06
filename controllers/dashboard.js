@@ -1,54 +1,50 @@
-var _ = require('lodash');
+var _ = require("lodash");
 
-"use strict";
+("use strict");
 
-
+const axios = require("axios");
 const logger = require("../utils/logger");
-const stationStore = require('../models/station-store');
-const conversions = require('../utils/conversions');
-const minMax = require('../utils/minMax');
-const trends = require('../utils/trends');
-const uuid = require('uuid');
-const accounts = require ('./accounts.js');
-const station = require ('./station.js');
-const stationAnalytics = require('../utils/station-Analytics');
-const updateReadings = require('../utils/updateReadings');
+const stationStore = require("../models/station-store");
+const conversions = require("../utils/conversions");
+const minMax = require("../utils/minMax");
+const trends = require("../utils/trends");
+const uuid = require("uuid");
+const accounts = require("./accounts.js");
+const station = require("./station.js");
+const stationAnalytics = require("../utils/station-Analytics");
+const updateReadings = require("../utils/updateReadings");
 
 const dashboard = {
-   index(request, response) {
-    logger.info('dashboard rendering');
+  index(request, response) {
+    logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
-    const stations = stationStore.getAllStations();
-     
-     for (let i=0; i<stations.length; i++) {
+    const allstations = stationStore.getUserStations(); // changed getAllStations to getUserStations
+    const stations = allstations.sort();
+
+    for (let i = 0; i < stations.length; i++) {
       let station = stations[i];
       if (station.readings.length > 0) {
         updateReadings.getUpdateReading(station);
-        
       }
     }
-    
- 
-     
 
-     _.sortBy(stations, ['stationName'], ['asc']);  //DOESNT WORK ATTEMPT TO ALPHABETISE 
-   
     const viewData = {
-      title: 'Station Dashboard',
-      stations: stationStore.getUserStations(loggedInUser.id),
-      
+      title: "Station Dashboard",
+      stations: stationStore.getUserStations(loggedInUser.id)
     };
-    logger.info('about to render', stationStore.getAllStations());
-    response.render('dashboard', viewData);
+    logger.info("about to render", stationStore.getUserStations()); // changed getAllStations to getUserStations
+
+    response.render("dashboard", viewData);
   },
-   deleteStation(request, response) {
+
+  deleteStation(request, response) {
     const stationId = request.params.id;
     logger.debug(`Deleting Station ${stationId}`);
     stationStore.removeStation(stationId);
-    response.redirect('/dashboard');
+    response.redirect("/dashboard");
   },
-  
-    addStation(request, response) {
+
+  addStation(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const newStation = {
       id: uuid.v1(),
@@ -56,13 +52,13 @@ const dashboard = {
       stationName: request.body.stationName,
       latitude: request.body.latitude,
       longitude: request.body.longitude,
-      
-      readings: [],
+
+      readings: []
     };
-    logger.debug('Creating a new Station', newStation);
+    logger.debug("Creating a new Station", newStation);
     stationStore.addStation(newStation);
-    response.redirect('/dashboard');
-  },
+    response.redirect("/dashboard");
+  }
 };
 
 module.exports = dashboard;

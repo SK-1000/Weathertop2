@@ -6,10 +6,10 @@ const about = {
   index(request, response) {
     logger.info("about rendering");
     const viewData = {
-      title: "About Weathertop 2",
+      title: "About Weathertop 2"
     };
     response.render("about", viewData);
-  },
+  }
 };
 
 module.exports = about;
