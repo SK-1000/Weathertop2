@@ -9,738 +9,108 @@
       "readings": []
     },
     {
-      "id": "c49c00d0-ea55-11eb-a976-8fc9aa4b570f",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "stationName": "Homer station",
-      "latitude": "2.0000001",
-      "longitude": "-9.55555",
-      "readings": [
-        {
-          "code": 804,
-          "temperature": 16.56,
-          "windSpeed": 0.45,
-          "pressure": 1021,
-          "windDirection": 220,
-          "timestamp": "Sun Sep 05 2021 21:18:22 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 804,
-          "temperature": 16.56,
-          "windSpeed": 0.45,
-          "pressure": 1021,
-          "windDirection": 220,
-          "timestamp": "Sun Sep 05 2021 21:25:14 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 804,
-          "temperature": 16.56,
-          "windSpeed": 0.45,
-          "pressure": 1021,
-          "windDirection": 220,
-          "timestamp": "Sun Sep 05 2021 21:44:56 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 701,
-          "temperature": 16.49,
-          "windSpeed": 0.89,
-          "pressure": 1022,
-          "windDirection": 211,
-          "timestamp": "Mon Sep 06 2021 08:32:20 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "2ce81cd0-0eed-11ec-83a4-f319bea3e13e",
-          "code": "400",
-          "temp": "6",
-          "windSpeed": "10",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Mon Sep 06 2021 08:33:56 GMT+0000 (Coordinated Universal Time)"
-        }
-      ],
-      "latestReading": {
-        "id": "83af52f0-f556-11eb-b20c-13930ea7f32b",
-        "code": "100",
-        "temp": "3",
-        "windSpeed": "5",
-        "windDirection": "5",
-        "pressure": "7000"
-      },
-      "latestWindReading": "1 bft",
-      "latestWindDirection": "North",
-      "latestWindChill": 2,
-      "latestWeatherCode": "Awaiting code entry",
-      "latestTempFahr": null,
-      "threeMostRecentReadingsTemp": null,
-      "latestReadingTemp": "3",
-      "latestReadingPressure": "7000"
-    },
-    {
-      "id": "f4ca76a0-f398-11eb-9590-a576879d9d05",
-      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationName": "Salthill",
-      "readings": [],
-      "latestReading": {
-        "id": "390cc330-f601-11eb-b21e-e78d6195485e",
-        "code": "200",
-        "temp": "2",
-        "windSpeed": "6",
-        "windDirection": "5",
-        "pressure": "2000"
-      },
-      "latestWindReading": "2 bft",
-      "latestWindDirection": "North East",
-      "latestWindChill": 3,
-      "latestWeatherCode": "Awaiting code entry",
-      "latestTempFahr": null,
-      "threeMostRecentReadingsTemp": "steady",
-      "latestReadingTemp": "4",
-      "latestReadingPressure": "8000"
-    },
-    {
-      "id": "18291520-f39e-11eb-a650-53e65dcd4ed4",
-      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationName": "Rosslare",
-      "readings": [],
-      "latestReading": {
-        "id": "286ce6a0-f39e-11eb-a650-53e65dcd4ed4",
-        "code": "100",
-        "temp": "3",
-        "windSpeed": "5",
-        "windDirection": "5",
-        "pressure": "7000"
-      },
-      "latestWindReading": "Awaiting Wind data",
-      "latestWindDirection": "North",
-      "latestWindChill": 0,
-      "latestWeatherCode": "Awaiting code entry",
-      "latestTempFahr": null,
-      "threeMostRecentReadingsTemp": null,
-      "latestReadingTemp": "3",
-      "latestReadingPressure": "7000"
-    },
-    {
-      "id": "a391d390-f51a-11eb-9dec-593af885c109",
-      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationName": "Rosslare",
-      "readings": []
-    },
-    {
-      "id": "47ba35c0-f51b-11eb-9dec-593af885c109",
-      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationName": "fdskfs;lkf",
-      "readings": []
-    },
-    {
-      "id": "72eec920-f900-11eb-8286-93290b2e7f78",
+      "id": "4365b670-126c-11ec-b347-1b63e1f6fd07",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "stationName": "Hello Statoin",
-      "latitude": "2.0000001",
+      "stationName": "Marges Test station",
+      "latitude": "-9.215421",
+      "longitude": "44.333",
+      "readings": []
+    },
+    {
+      "id": "6e8909e0-126e-11ec-900f-379e22299fb2",
+      "userid": "60d902a0-126e-11ec-900f-379e22299fb2",
+      "stationName": "Moe's Bar station",
+      "latitude": "-9.215421",
       "longitude": "-65.0000",
       "readings": [
         {
-          "id": "3a3a0240-0cef-11ec-b921-313389cbd527",
+          "id": "84cb20d0-126e-11ec-900f-379e22299fb2",
           "code": "500",
-          "temp": "4",
-          "windSpeed": "4",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Fri Sep 03 2021 19:43:35 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "4266e780-0cef-11ec-b921-313389cbd527",
-          "code": "500",
-          "temp": "4",
-          "windSpeed": "4",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Fri Sep 03 2021 19:43:49 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "4bbedf40-0cef-11ec-b921-313389cbd527",
-          "code": "400",
-          "temp": "4",
-          "windSpeed": "4",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Fri Sep 03 2021 19:44:04 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "c04ff950-0e72-11ec-b118-6d443b263e4b",
-          "code": "500",
-          "temp": "6",
-          "windSpeed": "5",
-          "windDirection": "100",
-          "pressure": "6000",
-          "timestamp": "Sun Sep 05 2021 17:57:35 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "cce541c0-0e72-11ec-b118-6d443b263e4b",
-          "code": "400",
-          "temp": "10",
-          "windSpeed": "50",
-          "windDirection": "200",
-          "pressure": "2000",
-          "timestamp": "Sun Sep 05 2021 17:57:56 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 804,
-          "temperature": 16.56,
-          "windSpeed": 0.45,
-          "pressure": 1020,
-          "windDirection": 219
-        },
-        {
-          "code": 804,
-          "temperature": 16.56,
-          "windSpeed": 0.45,
-          "pressure": 1020,
-          "windDirection": 219
-        },
-        {
-          "code": 804,
-          "temperature": 16.56,
-          "windSpeed": 0.45,
-          "pressure": 1020,
-          "windDirection": 219,
-          "timestamp": "Sun Sep 05 2021 21:15:53 GMT+0000 (Coordinated Universal Time)"
-        }
-      ]
-    },
-    {
-      "id": "a903f260-ea55-11eb-a976-8fc9aa4b570f",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "stationName": "Marge station",
-      "latitude": "2.0000001",
-      "longitude": "-9.55555",
-      "readings": [],
-      "latestReading": {
-        "id": "48ee4a10-f86a-11eb-ac31-e56e1c71810f",
-        "code": "500",
-        "temp": "6",
-        "windSpeed": "45",
-        "pressure": "2000"
-      },
-      "latestWindReading": "4 bft",
-      "latestWindDirection": "South East",
-      "latestWindChill": 14,
-      "latestWeatherCode": "Awaiting code entry",
-      "latestTempFahr": null,
-      "threeMostRecentReadingsTemp": null,
-      "latestReadingTemp": "15",
-      "latestReadingPressure": "6000"
-    },
-    {
-      "id": "97051120-f900-11eb-8286-93290b2e7f78",
-      "userid": "ef854360-ea55-11eb-a976-8fc9aa4b570f",
-      "stationName": "choc station",
-      "latitude": "2.0000001",
-      "longitude": "-65.0000",
-      "readings": [],
-      "latestReadingTemp": "6",
-      "latestReadingPressure": "6000",
-      "latestWindReading": "1 bft",
-      "latestWindDirection": "East",
-      "latestWindChill": 5,
-      "latestWeatherCode": "Awaiting code entry",
-      "latestTempFahr": null
-    },
-    {
-      "id": "fa046d20-fb58-11eb-89fb-f1f888a92115",
-      "userid": "00be14e0-f94c-11eb-87a3-d72da6d11baf",
-      "stationName": "test statoin",
-      "latitude": "12.555555",
-      "longitude": "-9.55555",
-      "readings": [
-        {
-          "id": "0459b0a0-fb59-11eb-89fb-f1f888a92115",
-          "code": "100",
-          "temp": "1",
-          "windSpeed": "6",
-          "windDirection": "100",
-          "pressure": "7000",
-          "timestamp": "Thu Aug 12 2021 10:35:30 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "e3a93370-fb59-11eb-ba56-4f6e651c2880",
-          "code": "100",
-          "temp": "2",
-          "windSpeed": "12",
-          "windDirection": "120",
-          "pressure": "1200",
-          "timestamp": "Thu Aug 12 2021 10:41:45 GMT+0000 (Coordinated Universal Time)"
+          "temp": "5.69",
+          "windSpeed": "5.66",
+          "windDirection": "65",
+          "pressure": "1000",
+          "timestamp": "Fri Sep 10 2021 19:37:22 GMT+0000 (Coordinated Universal Time)"
         }
       ],
-      "latestReadingTemp": "2",
-      "latestReadingPressure": "1200",
-      "latestWindReading": "3 bft",
-      "latestWindDirection": "East South East",
-      "latestWindChill": -1,
-      "latestWeatherCode": "clear",
-      "latestTempFahr": 35.6,
-      "minTemp": "1",
-      "maxTemp": "2",
-      "minPressure": "1200",
-      "maxPressure": "7000",
-      "minWind": "12",
-      "maxWind": "6",
-      "weatherIcon": "clear",
-      "pinkSun": "clear",
-      "pinkUmbrella": "rain",
-      "redWarn": "Please enter correct code"
-    },
-    {
-      "id": "04c99e90-fb5b-11eb-b8bc-bb744cb2a3eb",
-      "userid": "f5ddbbf0-fb5a-11eb-b8bc-bb744cb2a3eb",
-      "stationName": "orla station",
-      "latitude": "3.66666",
-      "longitude": "6.111111",
-      "readings": [
-        {
-          "id": "11f97950-fb5b-11eb-b8bc-bb744cb2a3eb",
-          "code": "100",
-          "temp": "4",
-          "windSpeed": "5",
-          "windDirection": "100",
-          "pressure": "1000",
-          "timestamp": "Thu Aug 12 2021 10:50:12 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "49003c40-fb5b-11eb-b8bc-bb744cb2a3eb",
-          "code": "100",
-          "temp": "6",
-          "windSpeed": "7",
-          "windDirection": "60",
-          "pressure": "1000",
-          "timestamp": "Thu Aug 12 2021 10:51:45 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "acd184e0-fb5b-11eb-8ef5-eb6f786aa78a",
-          "code": "100",
-          "temp": "6",
-          "windSpeed": "6",
-          "windDirection": "100",
-          "pressure": "6000",
-          "timestamp": "Thu Aug 12 2021 10:54:32 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "f2ea2900-fb5b-11eb-94a2-633dfe45dd62",
-          "code": "100",
-          "temp": "6",
-          "windSpeed": "9",
-          "windDirection": "100",
-          "pressure": "1000",
-          "timestamp": "Thu Aug 12 2021 10:56:30 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "368ff860-fb5c-11eb-94a2-633dfe45dd62",
-          "code": "100",
-          "temp": "6",
-          "windSpeed": "5",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Thu Aug 12 2021 10:58:23 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "a6730190-fb5c-11eb-94a2-633dfe45dd62",
-          "code": "100",
-          "temp": "6",
-          "windSpeed": "5",
-          "windDirection": "200",
-          "pressure": "6000",
-          "timestamp": "Thu Aug 12 2021 11:01:31 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "b22d84f0-fb5d-11eb-8870-05763c1d793e",
-          "code": "100",
-          "temp": "4",
-          "windSpeed": "9",
-          "windDirection": "60",
-          "pressure": "7000",
-          "timestamp": "Thu Aug 12 2021 11:09:00 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "6a399bb0-fb5e-11eb-ba28-f5713f5de859",
-          "code": "700",
-          "temp": "6",
-          "windSpeed": "9",
-          "windDirection": "100",
-          "pressure": "1000",
-          "timestamp": "Thu Aug 12 2021 11:14:09 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "93a86e10-fb70-11eb-bb9c-0180439bc722",
-          "code": "400",
-          "temp": "7",
-          "windSpeed": "8",
-          "windDirection": "100",
-          "pressure": "1000",
-          "timestamp": "Thu Aug 12 2021 13:24:09 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "7abf3ba0-fe94-11eb-b12a-95393db125e9",
-          "code": "300",
-          "temp": "4",
-          "windSpeed": "6",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Mon Aug 16 2021 13:18:43 GMT+0000 (Coordinated Universal Time)"
-        }
-      ],
-      "latestWindReading": "2 bft",
-      "latestWindDirection": "East",
-      "latestWindChill": 3,
-      "latestWeatherCode": "cloudy",
-      "latestTempFahr": 39.2,
-      "minTemp": "4",
-      "maxTemp": "7",
-      "minPressure": "1000",
-      "maxPressure": "7000",
-      "minWind": "5",
-      "maxWind": "9",
-      "weatherIcon": "clear",
-      "pinkSun": "clear",
-      "pinkUmbrella": "rain",
-      "redWarn": "Please enter correct code",
-      "threeMostRecentReadingsTemp": null,
-      "latestReadingTemp": "4",
-      "latestReadingPressure": "2000"
-    },
-    {
-      "id": "77e87500-fb5f-11eb-a806-9f89c92f6891",
-      "userid": "f5ddbbf0-fb5a-11eb-b8bc-bb744cb2a3eb",
-      "stationName": "Hello Statoin",
-      "latitude": "-9.215421",
-      "longitude": "10",
-      "readings": [
-        {
-          "id": "830945e0-fb5f-11eb-a806-9f89c92f6891",
-          "code": "700",
-          "temp": "6",
-          "windSpeed": "5",
-          "windDirection": "100",
-          "pressure": "1000",
-          "timestamp": "Thu Aug 12 2021 11:22:00 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "addf4e90-fb5f-11eb-a806-9f89c92f6891",
-          "code": "600",
-          "temp": "6",
-          "windSpeed": "9",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Thu Aug 12 2021 11:23:12 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "3ae722e0-fb6f-11eb-a507-9567373a6150",
-          "code": "500",
-          "temp": "7",
-          "windSpeed": "5",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Thu Aug 12 2021 13:14:31 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "efe31370-fb6f-11eb-b4e5-f7348e6c095e",
-          "code": "100",
-          "temp": "8",
-          "windSpeed": "8",
-          "windDirection": "60",
-          "pressure": "7000",
-          "timestamp": "Thu Aug 12 2021 13:19:34 GMT+0000 (Coordinated Universal Time)"
-        }
-      ],
-      "latestReadingTemp": "8",
-      "latestReadingPressure": "7000",
-      "latestWindReading": "2 bft",
-      "latestWindDirection": "East North East",
-      "latestWindChill": 7,
-      "latestWeatherCode": "clear",
-      "latestTempFahr": 46.4,
-      "minTemp": "6",
-      "maxTemp": "8",
-      "minPressure": "1000",
-      "maxPressure": "7000",
-      "minWind": "5",
-      "maxWind": "9",
-      "pinkSun": "clear",
-      "pinkUmbrella": "rain",
-      "redWarn": "Please enter correct code",
-      "threeMostRecentReadingsTemp": null
-    },
-    {
-      "id": "eb4902d0-fb78-11eb-b08a-5bad591121f9",
-      "userid": "f5ddbbf0-fb5a-11eb-b8bc-bb744cb2a3eb",
-      "stationName": "Ann station",
-      "latitude": "-9.215421",
-      "longitude": "-9.55555",
-      "readings": []
-    },
-    {
-      "id": "e4340620-fdfd-11eb-884e-597d78ea5abf",
-      "userid": "f5ddbbf0-fb5a-11eb-b8bc-bb744cb2a3eb",
-      "stationName": "Dublin Station",
-      "latitude": "53.3497645",
-      "longitude": "-6.2602732",
-      "readings": []
-    },
-    {
-      "id": "9e9fcda0-fe94-11eb-b12a-95393db125e9",
-      "userid": "f5ddbbf0-fb5a-11eb-b8bc-bb744cb2a3eb",
-      "stationName": "New York",
-      "latitude": "40.7127281",
-      "longitude": "-74.0060152",
-      "readings": [
-        {
-          "id": "b0147e00-fe94-11eb-b12a-95393db125e9",
-          "code": "200",
-          "temp": "6",
-          "windSpeed": "10",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Mon Aug 16 2021 13:20:12 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "f6dbdbe0-fe98-11eb-b63e-c349ed3efaae",
-          "timestamp": "Mon Aug 16 2021 13:50:49 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "c8f5a8d0-fe9f-11eb-8553-2fd263992f86",
-          "timestamp": "Mon Aug 16 2021 14:39:38 GMT+0000 (Coordinated Universal Time)"
-        }
-      ],
+      "latestReadingTemp": "5.69",
+      "latestReadingPressure": "1000",
       "latestWindReading": "Enter a number between 1 - 117 for valid code",
-      "latestWindDirection": "invalid Direction",
-      "latestWindChill": null,
-      "latestWeatherCode": "Please enter correct code",
-      "latestTempFahr": null,
-      "minTemp": "6",
-      "maxTemp": "6",
-      "minPressure": "2000",
-      "maxPressure": "2000",
-      "minWind": "10",
-      "maxWind": "10",
-      "pinkSun": "clear",
-      "pinkUmbrella": "rain",
-      "redWarn": "Please enter correct code"
-    },
-    {
-      "id": "110fb860-09bb-11ec-9cfc-cb64b08fa78d",
-      "userid": "fdbb4b80-09ba-11ec-9cfc-cb64b08fa78d",
-      "stationName": "John's first weather station",
-      "latitude": "12.555555",
-      "longitude": "-65.0000",
-      "readings": [
-        {
-          "id": "8adf9fe0-0a77-11ec-ae4a-156909124bff",
-          "code": "500",
-          "temp": "6",
-          "windSpeed": "5",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Tue Aug 31 2021 16:21:48 GMT+0000 (Coordinated Universal Time)"
-        }
-      ],
-      "latestReadingTemp": "6",
-      "latestReadingPressure": "2000",
-      "latestWindReading": "1 bft",
-      "latestWindDirection": "East",
+      "latestWindDirection": "East North East",
       "latestWindChill": 0,
       "latestWeatherCode": "heavy showers",
-      "latestTempFahr": "6",
-      "minTemp": "6",
-      "maxTemp": "6",
-      "minPressure": "2000",
-      "maxPressure": "2000",
-      "minWind": "5",
-      "maxWind": "5",
-      "pinkSun": "clear",
-      "pinkUmbrella": "rain",
-      "redWarn": "Please enter correct code"
+      "latestTempFahr": "5.69",
+      "minTemp": "5.69",
+      "maxTemp": "5.69",
+      "minPressure": "1000",
+      "maxPressure": "1000",
+      "minWind": "5.66",
+      "maxWind": "5.66",
+      "latestWeatherIcon": "cloud rain icon",
+      "tempTrend": null,
+      "windTrend": null,
+      "pressureTrend": null
     },
     {
-      "id": "5774abe0-0a78-11ec-ae4a-156909124bff",
-      "userid": "fdbb4b80-09ba-11ec-9cfc-cb64b08fa78d",
-      "stationName": "ann station",
-      "latitude": "-8.666",
-      "longitude": "10.000",
-      "readings": []
+      "id": "8c188c70-1277-11ec-900f-379e22299fb2",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "stationName": "Homer Station",
+      "latitude": "-9.215421",
+      "longitude": "-65.0000",
+      "readings": [
+        {
+          "id": "98387dd0-1277-11ec-900f-379e22299fb2",
+          "code": "100",
+          "temp": "10.10",
+          "windSpeed": "10.10",
+          "windDirection": "20",
+          "pressure": "5000",
+          "timestamp": "Fri Sep 10 2021 20:42:20 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "id": "a26096d0-1277-11ec-900f-379e22299fb2",
+          "code": "200",
+          "temp": "12.12",
+          "windSpeed": "12.12",
+          "windDirection": "100",
+          "pressure": "7000",
+          "timestamp": "Fri Sep 10 2021 20:42:37 GMT+0000 (Coordinated Universal Time)"
+        },
+        {
+          "id": "ae18c5b0-1277-11ec-900f-379e22299fb2",
+          "code": "600",
+          "temp": "15.0",
+          "windSpeed": "10.10",
+          "windDirection": "100",
+          "pressure": "8000",
+          "timestamp": "Fri Sep 10 2021 20:42:57 GMT+0000 (Coordinated Universal Time)"
+        }
+      ],
+      "latestReadingTemp": "15.0",
+      "latestReadingPressure": "8000",
+      "latestWindReading": "2 bft",
+      "latestWindDirection": "East",
+      "latestWindChill": 15,
+      "latestWeatherCode": "rain",
+      "latestTempFahr": 59,
+      "minTemp": "10.10",
+      "maxTemp": "15.0",
+      "minPressure": "5000",
+      "maxPressure": "8000",
+      "minWind": "10.10",
+      "maxWind": "12.12",
+      "latestWeatherIcon": "cloud showers heavy icon",
+      "tempTrend": "big blue arrow alternate circle up icon",
+      "windTrend": "big blue arrows alternate horizontal icon",
+      "pressureTrend": "big blue arrow alternate circle up icon"
     },
     {
-      "id": "6a397760-0a82-11ec-933c-f3185213c6f8",
-      "userid": "fdbb4b80-09ba-11ec-9cfc-cb64b08fa78d",
-      "stationName": "mary station",
-      "latitude": "12.555555",
-      "longitude": "-4.000000",
-      "readings": []
-    },
-    {
-      "id": "b9dd77f0-0a85-11ec-8213-d7a1ce42ad42",
-      "userid": "00be14e0-f94c-11eb-87a3-d72da6d11baf",
-      "stationName": "alics",
-      "latitude": "2.0000001",
-      "longitude": "10.255878",
-      "readings": []
-    },
-    {
-      "id": "cb5f6ec0-0a85-11ec-8213-d7a1ce42ad42",
-      "userid": "00be14e0-f94c-11eb-87a3-d72da6d11baf",
-      "stationName": "brian",
-      "latitude": "2.0000001",
-      "longitude": "70",
-      "readings": []
-    },
-    {
-      "id": "e2548200-0a85-11ec-8213-d7a1ce42ad42",
-      "userid": "00be14e0-f94c-11eb-87a3-d72da6d11baf",
-      "stationName": "zebra crossing",
-      "latitude": "2.0000001",
-      "longitude": "80",
-      "readings": []
-    },
-    {
-      "id": "ff97f680-0a85-11ec-8213-d7a1ce42ad42",
-      "userid": "f463c4b0-0a85-11ec-8213-d7a1ce42ad42",
-      "stationName": "zebra crossing",
+      "id": "0950b630-1279-11ec-900f-379e22299fb2",
+      "userid": "fb84c280-1278-11ec-900f-379e22299fb2",
+      "stationName": "Donna's Station",
       "latitude": "12.555555",
       "longitude": "-65.0000",
       "readings": []
-    },
-    {
-      "id": "16404950-0a86-11ec-8213-d7a1ce42ad42",
-      "userid": "f463c4b0-0a85-11ec-8213-d7a1ce42ad42",
-      "stationName": "elephant statoip",
-      "latitude": "2.0000001",
-      "longitude": "11.225887",
-      "readings": [
-        {
-          "id": "5820c860-0a8e-11ec-b3c6-e534385768da",
-          "code": "500",
-          "temp": "40",
-          "windSpeed": "20",
-          "windDirection": "50",
-          "pressure": "2000",
-          "timestamp": "Tue Aug 31 2021 19:05:02 GMT+0000 (Coordinated Universal Time)"
-        }
-      ]
-    },
-    {
-      "id": "8e7fc360-0e90-11ec-b537-3bf6b89952b3",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "stationName": "Test weatherMap",
-      "latitude": "51.5073219",
-      "longitude": "-0.1276474",
-      "readings": [
-        {
-          "code": 803,
-          "temperature": 20.08,
-          "windSpeed": 2.06,
-          "pressure": 1024,
-          "windDirection": 100,
-          "timestamp": "Mon Sep 06 2021 08:58:34 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 803,
-          "temperature": 20.06,
-          "windSpeed": 2.06,
-          "pressure": 1024,
-          "windDirection": 100,
-          "timestamp": "Mon Sep 06 2021 08:59:22 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 803,
-          "temperature": 20.59,
-          "windSpeed": 1.54,
-          "pressure": 1024,
-          "windDirection": 0,
-          "timestamp": "Mon Sep 06 2021 09:04:59 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 803,
-          "temperature": 20.5,
-          "windSpeed": 1.54,
-          "pressure": 1024,
-          "windDirection": 0,
-          "timestamp": "Mon Sep 06 2021 09:05:10 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 803,
-          "temp": 20.49,
-          "windSpeed": 1.54,
-          "pressure": 1024,
-          "windDirection": 0,
-          "timestamp": "Mon Sep 06 2021 09:07:26 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 803,
-          "temp": 20.56,
-          "windSpeed": 1.54,
-          "pressure": 1024,
-          "windDirection": 0,
-          "timestamp": "Mon Sep 06 2021 09:16:19 GMT+0000 (Coordinated Universal Time)"
-        }
-      ]
-    },
-    {
-      "id": "3a506120-0ef7-11ec-94b5-2d3f5e98e5fd",
-      "userid": "d593ce20-0ef6-11ec-94b5-2d3f5e98e5fd",
-      "stationName": "Faro ",
-      "latitude": "37.0162727",
-      "longitude": "-7.9351771",
-      "readings": [
-        {
-          "id": "956bbe60-0ef7-11ec-94b5-2d3f5e98e5fd",
-          "code": "500",
-          "temp": "10",
-          "windSpeed": "116",
-          "windDirection": "400",
-          "pressure": "1500",
-          "timestamp": "Mon Sep 06 2021 09:48:26 GMT+0000 (Coordinated Universal Time)"
-        }
-      ]
-    },
-    {
-      "id": "9e85a640-0ef8-11ec-94b5-2d3f5e98e5fd",
-      "userid": "d593ce20-0ef6-11ec-94b5-2d3f5e98e5fd",
-      "stationName": "Aspen",
-      "latitude": "3.69858585",
-      "longitude": "-106.8235606",
-      "readings": [
-        {
-          "id": "af519380-0ef8-11ec-94b5-2d3f5e98e5fd",
-          "code": "500",
-          "temp": "4",
-          "windSpeed": "10",
-          "windDirection": "100",
-          "pressure": "6000",
-          "timestamp": "Mon Sep 06 2021 09:56:19 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "bbd835f0-0ef8-11ec-94b5-2d3f5e98e5fd",
-          "code": "500",
-          "temp": "6",
-          "windSpeed": "5",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Mon Sep 06 2021 09:56:40 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "id": "0fc491c0-0f00-11ec-94b5-2d3f5e98e5fd",
-          "code": "600",
-          "temp": "6",
-          "windSpeed": "10",
-          "windDirection": "100",
-          "pressure": "2000",
-          "timestamp": "Mon Sep 06 2021 10:49:08 GMT+0000 (Coordinated Universal Time)"
-        },
-        {
-          "code": 804,
-          "temp": 24.63,
-          "windSpeed": 8.1,
-          "pressure": 1012,
-          "windDirection": 156,
-          "timestamp": "Mon Sep 06 2021 10:50:15 GMT+0000 (Coordinated Universal Time)"
-        }
-      ]
     }
   ]
 }
