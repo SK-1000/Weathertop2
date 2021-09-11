@@ -27,14 +27,14 @@ const station = {
       latestReadingTemp: stationAnalytics.getLatestReadingTemp(station),
       latestReadingPressure: stationAnalytics.getLatestReadingPressure(station),
       latestTempFahr: conversions.getLatestTempFahr(station),
-      latestWeatherCode: conversions.getLatestWeatherCode(station),
       latestWindReading: conversions.getLatestWindReading(station),
       latestWindDirection: conversions.getLatestWindDirection(station),
       latestWindChill: conversions.getLatestWindChill(station),
-      pinkSun: conversions.getPinkSun(station),
-      pinkUmbrella: conversions.getPinkUmbrella(station),
-      redWarn: conversions.getRedWarn(station),
-      //tempTrend: trends.getThreelatestTrends(station),
+      latestWeatherIcon: conversions.getLatestWeatherIcon(station),
+      latestWeatherCode: conversions.getLatestWeatherCode(station),
+      tempTrend: trends.getThreelatestTrends(station),
+      windTrend: trends.getThreelatestTrendsWind(station),
+      pressureTrend: trends.getThreelatestTrendsPressure(station),
       latitude: station.latitude,
       longitude: station.longitude
     };
@@ -90,6 +90,16 @@ const station = {
     } catch (error) {
       console.error(error);
     }
+  },
+
+  deleteAutoReading(request, response) {
+    const stationId = request.params.id;
+    const readingId = request.params.readingid;
+    logger.debug(
+      `Deleting Auto Reading ${readingId} from Station ${stationId}`
+    );
+    stationStore.removeReading(stationId, readingId);
+    response.redirect("/station/" + stationId);
   }
 };
 module.exports = station;

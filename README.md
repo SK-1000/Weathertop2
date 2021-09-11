@@ -12,17 +12,16 @@ purchase and install a weather station kit.
 - The owner may own multiple stations
 
 
-I have completed the majority of sections up to Release 3 and I have successfully made some progress on the Auto read functionality of Release 4.   I was not able to assign as high a priority 
-on this project during the summer holidays as I have to my previous projects but enjoyed figuring it out and would be keen to see a completed solution afterwards so I can see how to complete certain aspects such as conditional statements in 
-handlebars and some of the interesting features that I didnt get to in release 4.
+I have completed the majority of sections up to Release 3 and I have successfully made some progress on the Auto read functionality of Release 4. I was not able to assign as high a priority 
+on this project during the summer holidays as I have to my previous projects but enjoyed figuring it out and would be keen to see a completed solution afterwards so I can see how to complete some of the interesting features that I didnt get to in release 4.
 
 Description:
 
-The application that I have created will all a user to sign up to the weather station application by entering their first name, surname email address and a password. This information is then saved
+The application that I have created will allow a user to sign up to the weather station application by entering their first name, surname email address and a password. This information is then saved
 in the user_store.json file.
 
-When this customer selects to log in to the application, their email and password will be requested. When this is enterd the code reachs in to the user-store to autenticate the user and once this occurs 
-the users is displayed the dashboard page. They are then prompted to add a weather station name, including latitude and longitude. Longitude and latitude validation is included in handlebars to ensure
+When this customer selects to log in to the application, their email and password will be requested. When this is enterd the code reaches in to the user-store to autenticate the user and once this occurs 
+the users stations are displayed the dashboard page. They are then prompted to add a weather station name, including latitude and longitude. Longitude and latitude validation is included in handlebars to ensure
 these values are within the correct parameters (lat min -90, max 90, long min -180 max 180)
 
 This data is stored in the station-store.json file.
@@ -36,22 +35,20 @@ The user can now enter a readings for this station. Readings can be entered manu
 
 The addition of readings will update the station summary showing the follwing 
 
- - a card which displays the latitude and longitude of the station
- - a card showing the latest weather code (when a code is entered manually this works but doesnt if auto generateed as the codes don't match the codes provided originally in the spec. Also, I notied the latest weather code shows on the stationsummary in the station page but not on the dashboard page.)
- - a card showing the temperature celcius fahrenheit, min and max. (I spent a lot of time on the trends but I didnt succeed so far. The code is in the trends.js in utils. My issue always was around 
- the if statement in handlebars and not being able to do and "if equals to" type condition. It as the same for all readings below)
- - a card showing latest windspeed, wind direction,feels like, max wind speed, min wind speed.  
- - a card to do latest and min and max pressure
+ - a card which displays the latitude and longitude of the station.
+ - a card showing the latest weather code and related icon.
+ - a card showing the temperature celcius fahrenheit, min and max and trend icon.
+ - a card showing latest windspeed, wind direction,feels like, max wind speed, min wind speed and trend icon.
+ - a card to show latest pressure and min and max pressure as well as a trend icon.
  
- Along with each reading displayed in the list stations view the latest time is generated and also displayed.
+ Along with each reading displayed in the list stations view, the latest time is generated and also displayed. The stations are also listed in alphabetical order.
  
- I have noticed that once a reading is entered, it is displayed on the station summary on the station view but not the dashboard view.
- 
-Manually entered readings can also be deleted. Note. The automated readings cannot be deleted and I wasnt able to see why.
+ While a manually entered reading can be deleted. An automatic reading from the api cannot. I was unable to see why.
 
 I completed this in glitch and imported to github. 
 
-I used mainly the course lectures and labs but used some references online when researching the connection to the api and the trying to figure out how to use helper methods etc.
+I used mainly the course lectures and labs but used some references online when researching the connection to the api and the trying to figure out how to use use conditions in handlebars.
+
 
 
 

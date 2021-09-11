@@ -23,10 +23,12 @@ const updateReadings = {
     station.maxPressure = minMax.getMaxPressure(station);
     station.minWind = minMax.getMinWind(station);
     station.maxWind = minMax.getMaxWind(station);
-    station.pinkSun = conversions.getPinkSun(station);
-    station.pinkUmbrella = conversions.getPinkUmbrella(station);
-    station.redWarn = conversions.getRedWarn(station);
-    //station.tempTrend = trends.getThreelatestTrends(station);
+    station.latestWeatherIcon = conversions.getLatestWeatherIcon(station);
+    station.latestWeatherCode = conversions.getLatestWeatherCode(station);
+    station.tempTrend = trends.getThreelatestTrends(station);
+    station.windTrend = trends.getThreelatestTrendsWind(station);
+    station.pressureTrend = trends.getThreelatestTrendsPressure(station);
+    
   }
 };
 module.exports = updateReadings;

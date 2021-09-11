@@ -83,6 +83,34 @@
       "email": "leo@leo.com",
       "password": "secret",
       "id": "d593ce20-0ef6-11ec-94b5-2d3f5e98e5fd"
+    },
+    {
+      "firstName": "judy",
+      "lastName": "judy",
+      "email": "judy@judy.com",
+      "password": "secret",
+      "id": "9c2553d0-0f13-11ec-8145-0df8a1c01267"
+    },
+    {
+      "firstName": "mac",
+      "lastName": "kirwan",
+      "email": "mac@kirwan.com",
+      "password": "secret",
+      "id": "3f76e140-10c5-11ec-95bd-9db2d158f5b1"
+    },
+    {
+      "firstName": "Moe",
+      "lastName": "Moe",
+      "email": "moe@simpson.com",
+      "password": "secret",
+      "id": "60d902a0-126e-11ec-900f-379e22299fb2"
+    },
+    {
+      "firstName": "Donna",
+      "lastName": "Donna",
+      "email": "donna@donna.com",
+      "password": "secret",
+      "id": "fb84c280-1278-11ec-900f-379e22299fb2"
     }
   ]
 }

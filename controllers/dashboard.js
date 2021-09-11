@@ -18,7 +18,7 @@ const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
-    const allstations = stationStore.getUserStations(); // changed getAllStations to getUserStations
+    const allstations = stationStore.getAllStations(); // changed getAllStations to getUserStations
     const stations = allstations.sort();
 
     for (let i = 0; i < stations.length; i++) {
@@ -30,7 +30,9 @@ const dashboard = {
 
     const viewData = {
       title: "Station Dashboard",
-      stations: stationStore.getUserStations(loggedInUser.id)
+      stations: stationStore.getUserStations(loggedInUser.id),
+   
+  
     };
     logger.info("about to render", stationStore.getUserStations()); // changed getAllStations to getUserStations
 

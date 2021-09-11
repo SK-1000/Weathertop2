@@ -11,8 +11,54 @@ const conversions = {
     }
     return latestReadingTempFahr;
   },
+  
+  
+  getLatestWeatherIcon(station) {
+    let latestWeatherCode = null;
+    let icon = "Awaiting code entry";
 
-  //NOT WORKING FOR SOME REASON for the first reading in a station
+    if (station.readings.length > 0) {
+      latestWeatherCode = station.readings[0].code;
+      for (let i = 0; i < station.readings.length; i++) {
+        latestWeatherCode = Number(station.readings[i].code);
+      }
+
+      switch (latestWeatherCode) {
+        case 100:
+          icon = "sun icon";
+          break;
+        case 200:
+          icon = "cloud sun icon";
+          break;
+        case 300:
+          icon = "cloud icon";
+          break;
+        case 400:
+          icon = "cloud sun rain icon";
+          break;
+        case 500:
+          icon = "cloud rain icon";
+          break;
+        case 600:
+          icon = "cloud showers heavy icon";
+          break;
+        case 700:
+          icon = "snowflake icon";
+          break;
+        case 800:
+          icon = "bolt icon";
+          break;
+        default:
+          icon = "question circle icon";
+      }
+    }
+
+    return icon;
+  },
+
+  
+
+  
   getLatestWeatherCode(station) {
     let latestWeatherCode = null;
     let textCode = "Awaiting code entry";
@@ -45,50 +91,19 @@ const conversions = {
         case 700:
           textCode = "snow";
           break;
+        case 800:
+          textCode = "thunder";
+          break;
         default:
-          textCode = "Please enter correct code";
+          textCode = "Automated weathercodes are not recognised";
       }
     }
 
     return textCode;
   },
 
-  //return key for each weather icon THIS IS NOT WORKING YET
 
-  getPinkSun(station) {
-    let icon = null;
 
-    if ((this.textCode = "clear")) {
-      icon = this.textCode;
-    }
-    return icon;
-
-    console.log(this.textCode);
-  },
-
-  getPinkUmbrella(station) {
-    let icon = null;
-
-    if ((this.textCode = "rain")) {
-      icon = this.textCode;
-    }
-    return icon;
-
-    console.log(icon);
-  },
-
-  getRedWarn(station) {
-    let icon = null;
-
-    if ((this.textCode = "Please enter correct code")) {
-      icon = this.textCode;
-    }
-    return icon;
-
-    console.log(icon);
-  },
-
-  //latest wind beaufort
   getLatestWindReading(station) {
     let latestWindReading = null;
     let beaufort = "Awaiting Wind data";
